@@ -3,50 +3,2060 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hindi Swar Vyanjan Barakhadi Adventure</title>
+<title>🌟 Kids Learning Adventure 🌟</title>
 <style>
-*{box-sizing:border-box} :root{--p:#6d28d9;--pink:#ec4899;--green:#059669;--red:#e11d48}
-html,body{width:100%;height:100%;margin:0;overflow:hidden}body{font-family:system-ui,"Segoe UI",sans-serif;background:linear-gradient(135deg,#dff5ff,#eee7ff 48%,#fff0bd);color:#334155;padding:8px}
-.app{width:min(1180px,100%);height:calc(100vh - 16px);margin:auto;display:grid;grid-template-rows:auto auto 9px minmax(0,1fr) auto;gap:7px}.header{text-align:center}.badge{display:inline-block;padding:4px 12px;border-radius:20px;background:#ffffffd9;color:var(--p);font-size:.75rem;font-weight:800}.header h1{margin:3px 0 1px;color:#4c1d95;font-size:clamp(1.45rem,3vh,2.2rem)}.header p{margin:0;font-size:.82rem;font-weight:700}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.stat{background:#ffffffd9;border-radius:12px;padding:5px;text-align:center;box-shadow:0 4px 12px #4c1d9514}.stat small{display:block;font-size:.61rem;font-weight:800;color:#64748b}.stat b{color:var(--p);font-size:1rem}.progress{height:9px;border-radius:10px;background:#ffffffa8;overflow:hidden}.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--p),#0ea5e9);transition:.35s}
-.card{min-height:0;overflow:hidden;background:#fffffff2;border:3px solid #fff;border-radius:22px;box-shadow:0 12px 35px #4c1d9528;padding:7px 20px;display:flex;align-items:center;justify-content:center;text-align:center}.play{width:100%;height:100%;display:grid;grid-template-rows:auto auto minmax(85px,1fr) auto auto auto;gap:2px;align-items:center}.stars{font-size:18px;color:#f59e0b;letter-spacing:4px}.instruction{margin:0;color:var(--pink);font-size:.7rem;font-weight:900;letter-spacing:1px}.letter{font-family:"Noto Sans Devanagari","Mangal",sans-serif;font-size:clamp(4.7rem,15vh,8.2rem);line-height:1;color:var(--p);font-weight:900;text-shadow:0 3px #ddd6fe;display:flex;justify-content:center;align-items:center}.controls{display:flex;justify-content:center;gap:8px}.small-btn{border:2px solid #bae6fd;background:#f0f9ff;color:#0369a1;border-radius:11px;padding:5px 12px;font-weight:800;cursor:pointer}.small-btn.hint{border-color:#fde68a;background:#fffbeb;color:#b45309}.hint-line{min-height:18px;margin:1px;font-size:.76rem;color:#b45309;font-weight:800}.answer-row{width:min(650px,100%);margin:auto;display:grid;grid-template-columns:1fr 175px;gap:8px}#answer{width:100%;border:3px solid #ddd6fe;border-radius:13px;padding:8px;text-align:center;font-size:1.35rem;font-weight:900;outline:none;color:#312e81;background:#fff}#answer:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px #ede9fe}#answer.ok{border-color:#34d399;background:#ecfdf5}#answer.bad{border-color:#fb7185;background:#fff1f2;animation:shake .25s 2}.check{border:0;border-radius:13px;color:#fff;font-weight:900;background:linear-gradient(90deg,var(--p),var(--pink));cursor:pointer}.message{height:24px;margin:0;font-weight:900;font-size:.9rem}.success{color:var(--green)}.error{color:var(--red)}
-.bottom{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;background:#ffffffb8;border-radius:13px;padding:5px}.bottom span,.bottom button{font-size:.7rem;font-weight:750}.bottom button{border:0;background:#fff;border-radius:8px;padding:5px 8px;cursor:pointer}kbd{background:#334155;color:#fff;border-radius:5px;padding:2px 5px}.complete h2{font-size:2rem;color:#4c1d95;margin:5px}.complete .trophy{font-size:55px}.hidden{display:none!important}@keyframes shake{25%{transform:translateX(-9px)}75%{transform:translateX(9px)}}
-@media(max-height:690px){.app{gap:4px}.badge{padding:2px 9px}.header h1{font-size:1.35rem}.stat{padding:3px}.letter{font-size:clamp(4rem,12vh,6.2rem)}.card{padding:4px 16px}}
-@media(max-width:760px){html,body{height:auto;min-height:100%;overflow:auto}.app{height:auto;display:flex;flex-direction:column}.stats{grid-template-columns:repeat(2,1fr)}.card{min-height:475px}.answer-row{grid-template-columns:1fr}.check{padding:11px}.bottom{margin-bottom:10px}}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{--p:#6d28d9;--pink:#ec4899;--green:#10b981;--red:#ef4444}
+html,body{height:100%;overflow:hidden;font-family:'Comic Sans MS','Segoe UI',system-ui,sans-serif}
+body{background:linear-gradient(135deg,#dff5ff,#eee7ff 48%,#fff0bd);color:#334155}
+
+.app{display:grid;grid-template-columns:200px 1fr;height:100vh;gap:8px;padding:8px}
+.sidebar{background:linear-gradient(180deg,#fff 0%,#fef3ff 100%);border-radius:22px;padding:10px 8px;
+  box-shadow:0 10px 30px #4c1d9528;display:flex;flex-direction:column;gap:6px;overflow-y:auto}
+.logo{text-align:center;font-size:.78rem;font-weight:900;color:var(--p);padding:7px;
+  background:linear-gradient(90deg,#fde68a,#fbcfe8);border-radius:14px;line-height:1.15;flex-shrink:0}
+.menu-btn{border:0;border-radius:16px;padding:10px 10px;font-family:inherit;font-weight:900;font-size:.76rem;
+  cursor:pointer;display:flex;flex-direction:row;align-items:center;gap:8px;transition:.25s;
+  color:#fff;text-shadow:0 1px 2px #0003;box-shadow:0 5px 14px #0002;text-align:left;flex-shrink:0}
+.menu-btn .ico{font-size:1.35rem;line-height:1;flex-shrink:0}
+.menu-btn:hover{transform:translateY(-2px) scale(1.03)}
+.menu-btn.active{transform:scale(1.05);box-shadow:0 0 0 3px #fbbf24,0 8px 20px #0003}
+.menu-btn[data-tab="hindi"]{background:linear-gradient(135deg,#a78bfa,#7c3aed)}
+.menu-btn[data-tab="add"]{background:linear-gradient(135deg,#34d399,#059669)}
+.menu-btn[data-tab="sub"]{background:linear-gradient(135deg,#fb7185,#e11d48)}
+.menu-btn[data-tab="mul"]{background:linear-gradient(135deg,#fbbf24,#f59e0b)}
+.menu-btn[data-tab="div"]{background:linear-gradient(135deg,#38bdf8,#0284c7)}
+.menu-btn[data-tab="tables"]{background:linear-gradient(135deg,#f472b6,#db2777)}
+.menu-btn[data-tab="tblPractice"]{background:linear-gradient(135deg,#c084fc,#7e22ce)}
+.menu-btn[data-tab="abc"]{background:linear-gradient(135deg,#fb923c,#ea580c)}
+.menu-btn[data-tab="typing"]{background:linear-gradient(135deg,#22d3ee,#0891b2)}
+.menu-btn[data-tab="help"]{background:linear-gradient(135deg,#94a3b8,#475569)}
+.menu-btn[data-tab="request"]{background:linear-gradient(135deg,#facc15,#ca8a04)}
+
+.main{background:#fffffff2;border:3px solid #fff;border-radius:22px;box-shadow:0 12px 35px #4c1d9528;
+  padding:10px 14px;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.topbar{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:6px}
+.stat{background:#ffffffcc;border-radius:12px;padding:5px;text-align:center;box-shadow:0 3px 10px #0001}
+.stat small{display:block;font-size:.58rem;font-weight:800;color:#64748b}
+.stat b{color:var(--p);font-size:1rem}
+.progress{height:8px;border-radius:10px;background:#e2e8f0;overflow:hidden;margin-bottom:6px}
+.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--p),#0ea5e9);transition:.4s}
+.panel{flex:1;overflow:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px;position:relative}
+
+.toolbar{display:flex;gap:6px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:6px;
+  font-size:.7rem;font-weight:900}
+.toolbar .group{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.toolbar button{border:2px solid #ddd6fe;background:#fff;color:#6d28d9;border-radius:10px;
+  padding:4px 9px;cursor:pointer;font-family:inherit;font-weight:900;font-size:.68rem;transition:.2s}
+.toolbar button.active{background:linear-gradient(90deg,#7c3aed,#ec4899);color:#fff;border-color:transparent}
+.toolbar .label{color:#64748b;font-size:.65rem}
+
+.voice-status{display:inline-flex;align-items:center;gap:4px;background:#f0fdf4;border:2px solid #86efac;
+  color:#166534;padding:3px 8px;border-radius:20px;font-size:.65rem;font-weight:900;transition:.2s;white-space:nowrap}
+.voice-status.speaking{background:#fef3c7;border-color:#fbbf24;color:#92400e;animation:pulse 1s infinite}
+.voice-status.error{background:#fef2f2;border-color:#fca5a5;color:#991b1b}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+
+.voice-banner{
+  position:absolute;top:8px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(90deg,#fef3c7,#fde68a);border:3px solid #f59e0b;
+  border-radius:14px;padding:10px 18px;font-size:.85rem;font-weight:900;color:#78350f;
+  box-shadow:0 8px 24px #f59e0b44;z-index:50;text-align:center;max-width:90%;
+  animation:slideDown .4s ease-out;
+}
+@keyframes slideDown{from{transform:translate(-50%,-30px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+
+.play{width:100%;max-width:750px;display:flex;flex-direction:column;gap:6px;align-items:center}
+.instruction{margin:0;color:var(--pink);font-size:.72rem;font-weight:900;letter-spacing:1px;text-transform:uppercase;text-align:center}
+.qbox{background:linear-gradient(135deg,#fef3c7,#fbcfe8);border-radius:22px;padding:10px 26px;min-height:110px;
+  display:flex;align-items:center;justify-content:center;gap:16px;box-shadow:inset 0 -5px 0 #0000000d;width:100%;
+  transition:transform .3s, background .3s}
+.qbox.flash-ok{background:linear-gradient(135deg,#a7f3d0,#6ee7b7);animation:boxPulse .6s}
+.qbox.flash-bad{background:linear-gradient(135deg,#fecaca,#fca5a5);animation:boxPulse .5s}
+@keyframes boxPulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+.qtext{font-size:clamp(2.8rem,10vh,5.4rem);font-weight:900;color:var(--p);line-height:1;
+  text-shadow:0 3px #ddd6fe;text-align:center;transition:.3s}
+.mascot{font-size:clamp(2.4rem,7vh,4rem);animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-10px) rotate(4deg)}}
+
+.controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.small-btn{border:2px solid #bae6fd;background:#f0f9ff;color:#0369a1;border-radius:12px;padding:6px 12px;
+  font-family:inherit;font-weight:900;font-size:.72rem;cursor:pointer;transition:.2s}
+.small-btn.hint{border-color:#fde68a;background:#fffbeb;color:#b45309}
+.small-btn.speak{border-color:#a7f3d0;background:#ecfdf5;color:#047857}
+.small-btn:hover{transform:scale(1.06)}
+.hint-line{min-height:16px;font-size:.75rem;color:#b45309;font-weight:800;text-align:center}
+.answer-row{width:100%;display:grid;grid-template-columns:1fr 160px;gap:8px}
+#answer{width:100%;border:3px solid #ddd6fe;border-radius:14px;padding:10px;text-align:center;
+  font-size:1.5rem;font-weight:900;outline:none;color:#312e81;background:#fff;font-family:inherit;transition:.3s}
+#answer:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px #ede9fe}
+#answer.ok{border-color:#34d399;background:#ecfdf5;animation:okPulse .6s}
+#answer.bad{border-color:#fb7185;background:#fff1f2;animation:shake .3s 2}
+@keyframes okPulse{0%{transform:scale(1)}50%{transform:scale(1.06);box-shadow:0 0 0 8px #34d39933}100%{transform:scale(1)}}
+@keyframes shake{25%{transform:translateX(-9px)}75%{transform:translateX(9px)}}
+.check{border:0;border-radius:14px;color:#fff;font-weight:900;font-size:.9rem;
+  background:linear-gradient(90deg,var(--p),var(--pink));cursor:pointer;font-family:inherit;padding:12px;transition:.2s}
+.check:hover{transform:scale(1.04)}
+.message{height:24px;font-weight:900;font-size:.9rem;text-align:center}
+.success{color:var(--green)}
+.error{color:var(--red)}
+
+.plus-one{
+  position:fixed;font-size:1.8rem;font-weight:900;color:#10b981;
+  pointer-events:none;z-index:150;text-shadow:0 2px 6px #fff,0 0 12px #34d399;
+  animation:plusFloat 1.1s ease-out forwards;
+}
+@keyframes plusFloat{
+  0%{transform:translateY(0) scale(.5);opacity:0}
+  20%{transform:translateY(-10px) scale(1.3);opacity:1}
+  100%{transform:translateY(-90px) scale(1);opacity:0}
+}
+.play.slide-out{animation:slideOut .35s ease-in forwards}
+@keyframes slideOut{to{transform:translateX(-40px);opacity:0}}
+.play.slide-in{animation:slideIn .35s ease-out}
+@keyframes slideIn{from{transform:translateX(40px);opacity:0}to{transform:translateX(0);opacity:1}}
+
+.tables-wrap{width:100%;text-align:center}
+.tables-title{font-size:1.25rem;color:var(--p);font-weight:900;margin-bottom:6px}
+.table-chips{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin-bottom:10px}
+.chip{background:linear-gradient(135deg,#f9a8d4,#db2777);color:#fff;border:0;border-radius:11px;
+  padding:7px 12px;font-weight:900;font-family:inherit;cursor:pointer;font-size:.8rem;transition:.2s;
+  box-shadow:0 4px 10px #db277733}
+.chip:hover{transform:translateY(-2px) scale(1.08)}
+.chip.active{background:linear-gradient(135deg,#fbbf24,#f59e0b);transform:scale(1.12)}
+.table-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:6px;width:100%;padding:4px}
+.tbl-cell{background:#fff;border:2px solid #e9d5ff;border-radius:11px;padding:7px;font-weight:900;
+  font-size:.92rem;color:#4c1d95;cursor:pointer;transition:.15s;text-align:center}
+.tbl-cell:hover{background:#faf5ff;transform:scale(1.05);border-color:#a78bfa}
+.tbl-cell.speaking{background:#fef3c7;transform:scale(1.08)}
+
+.practice-row{display:flex;align-items:center;gap:8px;background:#fff;border:2px solid #e9d5ff;
+  border-radius:12px;padding:6px 10px;transition:.3s}
+.practice-row.active{box-shadow:0 0 0 3px #a78bfa, 0 6px 18px #7c3aed33;transform:scale(1.02)}
+.practice-row.solved{background:linear-gradient(90deg,#ecfdf5,#d1fae5);border-color:#10b981}
+.practice-q{font-weight:900;color:#4c1d95;font-size:1rem}
+.practice-blank{width:70px;border:2px dashed #c084fc;border-radius:8px;padding:5px;text-align:center;
+  font-weight:900;font-size:1rem;font-family:inherit;color:#7c3aed;outline:none;transition:.25s}
+.practice-blank:focus{border-style:solid;border-color:#7c3aed;background:#faf5ff;transform:scale(1.08)}
+.practice-blank.ok{border-color:#10b981;background:#ecfdf5;border-style:solid;animation:okPulse .5s}
+.practice-blank.bad{border-color:#ef4444;background:#fff1f2;border-style:solid;animation:shake .3s 2}
+
+.abc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;width:100%;padding:4px}
+.abc-card{background:linear-gradient(160deg,#fff,#fef3c7);border:3px solid #fbbf24;border-radius:16px;
+  padding:8px;text-align:center;cursor:pointer;transition:.25s;box-shadow:0 5px 14px #fbbf2444}
+.abc-card:hover{transform:translateY(-4px) rotate(-2deg) scale(1.05)}
+.abc-emoji{font-size:2.4rem;line-height:1;display:block}
+.abc-letter{font-size:1.8rem;font-weight:900;color:var(--p);margin-top:2px;font-family:'Noto Sans Devanagari',sans-serif}
+.abc-word{font-size:.75rem;font-weight:800;color:#b45309}
+
+.typing-menu{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;width:100%;max-width:1100px;padding:8px}
+.typing-card{background:linear-gradient(160deg,#fff,#e0f2fe);border:3px solid #38bdf8;border-radius:18px;
+  padding:14px;cursor:pointer;text-align:center;transition:.25s;box-shadow:0 6px 18px #38bdf844}
+.typing-card:hover{transform:translateY(-5px) scale(1.04);border-color:#0284c7}
+.typing-card .ic{font-size:2.6rem;display:block;margin-bottom:6px}
+.typing-card h3{color:#0369a1;font-size:1rem;margin-bottom:4px}
+.typing-card p{font-size:.72rem;color:#0c4a6e;font-weight:700}
+
+.typing-stage{width:100%;max-width:900px;display:flex;flex-direction:column;gap:10px;align-items:center;position:relative}
+.game-title{font-size:1.05rem;font-weight:900;color:#0369a1;background:#e0f2fe;border-radius:12px;padding:6px 14px;text-align:center}
+.game-instructions{background:#fef3c7;border:2px dashed #f59e0b;border-radius:12px;padding:8px 14px;
+  font-size:.8rem;font-weight:800;color:#78350f;text-align:center;max-width:600px;line-height:1.5}
+.game-hud{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;font-size:.78rem;font-weight:900;color:#0c4a6e}
+.game-hud span{background:#fff;border-radius:10px;padding:4px 10px;box-shadow:0 3px 10px #0001}
+
+.stairs{position:relative;width:100%;height:340px;background:linear-gradient(180deg,#bae6fd,#ecfdf5);
+  border-radius:18px;overflow:hidden;box-shadow:inset 0 -6px 0 #00000010}
+.stair{position:absolute;background:linear-gradient(180deg,#fbbf24,#d97706);border-radius:6px;
+  box-shadow:0 4px 10px #0003;display:flex;align-items:center;justify-content:center;color:#fff;
+  font-weight:900;font-size:.65rem;transition:background .35s;text-shadow:0 1px 2px #0004}
+.stair.done{background:linear-gradient(180deg,#86efac,#16a34a)}
+.monkey{position:absolute;font-size:2.6rem;transition:left .5s cubic-bezier(.34,1.56,.64,1),bottom .5s cubic-bezier(.34,1.56,.64,1);
+  z-index:5;filter:drop-shadow(0 4px 6px #0003);transform:scaleX(-1)}
+.monkey.jump{animation:mjump .55s ease}
+@keyframes mjump{0%{transform:translateY(0) scaleX(-1)}50%{transform:translateY(-30px) scaleX(-1) scale(1.15)}100%{transform:translateY(0) scaleX(-1)}}
+.target-word{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px;background:#fff;
+  border-radius:14px;box-shadow:0 4px 14px #0001;min-height:60px;align-items:center}
+.target-letter{font-size:2rem;font-weight:900;color:#94a3b8;padding:4px 10px;border-radius:8px;
+  transition:.25s;font-family:'Courier New',monospace}
+.target-letter.active{color:#0ea5e9;background:#e0f2fe;transform:scale(1.2)}
+.target-letter.typed{color:#16a34a;background:#dcfce7}
+.target-letter.wrong{color:#e11d48;animation:shake .3s 2}
+
+.fall-area{position:relative;width:100%;height:340px;background:linear-gradient(180deg,#1e293b,#0f172a);
+  border-radius:18px;overflow:hidden;box-shadow:inset 0 0 40px #0006}
+.starfield{position:absolute;inset:0;background-image:
+  radial-gradient(1px 1px at 20% 30%,#fff,transparent),
+  radial-gradient(1px 1px at 60% 70%,#fff,transparent),
+  radial-gradient(1px 1px at 80% 20%,#fff,transparent),
+  radial-gradient(1.5px 1.5px at 40% 50%,#fff,transparent),
+  radial-gradient(1px 1px at 90% 80%,#fff,transparent);opacity:.6}
+.fall-item{position:absolute;font-size:2rem;font-weight:900;color:#fff;
+  font-family:'Courier New',monospace;text-shadow:0 0 12px #38bdf8}
+.basket{position:absolute;bottom:6px;width:70px;height:40px;background:linear-gradient(180deg,#fbbf24,#d97706);
+  border-radius:0 0 30px 30px;box-shadow:0 6px 14px #0006;left:50%;transform:translateX(-50%);transition:left .18s}
+.basket::before{content:"🧺";position:absolute;top:-30px;left:50%;transform:translateX(-50%);font-size:2.2rem}
+
+.balloon-area{position:relative;width:100%;height:340px;background:linear-gradient(180deg,#bae6fd,#fef3c7);
+  border-radius:18px;overflow:hidden}
+.balloon{position:absolute;font-size:2.6rem;cursor:pointer;animation:floatUp 6s linear infinite;
+  text-align:center;user-select:none;transition:.25s}
+.balloon .lbl{font-size:.9rem;font-weight:900;color:#fff;background:#7c3aed;border-radius:50%;
+  width:22px;height:22px;line-height:22px;position:absolute;top:4px;left:50%;transform:translateX(-50%)}
+.balloon.pop{animation:none;transform:scale(1.8);opacity:0;transition:.3s}
+@keyframes floatUp{0%{transform:translateY(0)}100%{transform:translateY(-380px)}}
+
+.race-area{position:relative;width:100%;height:340px;background:linear-gradient(180deg,#fef3c7,#fce7f3);
+  border-radius:18px;overflow:hidden;padding:14px}
+.race-track{position:relative;height:50px;background:#fff8;border-radius:22px;margin-bottom:8px;
+  overflow:hidden;box-shadow:inset 0 2px 4px #0001}
+.race-runner{position:absolute;left:0;top:50%;transform:translateY(-50%);font-size:1.8rem;transition:left .35s}
+.race-finish{position:absolute;right:0;top:0;bottom:0;width:6px;background:#e11d48}
+
+.speech-bubble{position:absolute;top:12px;left:50%;transform:translateX(-50%);background:#fff;
+  border:3px solid #38bdf8;border-radius:14px;padding:6px 14px;font-weight:900;color:#0369a1;
+  font-size:.9rem;box-shadow:0 6px 18px #0002;z-index:6;display:none}
+.speech-bubble.show{display:block;animation:pop .3s}
+@keyframes pop{from{transform:translateX(-50%) scale(.6);opacity:0}to{transform:translateX(-50%) scale(1);opacity:1}}
+
+.cargo-track{position:relative;width:100%;height:230px;background:linear-gradient(180deg,#bae6fd,#ecfdf5);
+  border-radius:18px;overflow:hidden;padding-top:12px}
+.train-line{position:absolute;bottom:30px;left:0;right:0;height:8px;
+  background:repeating-linear-gradient(90deg,#94a3b8,#94a3b8 20px,#64748b 20px,#64748b 40px)}
+.train{position:absolute;bottom:34px;font-size:2.8rem;transition:left .6s cubic-bezier(.34,1.56,.64,1);z-index:4}
+
+.rocket-area{position:relative;width:100%;height:340px;background:linear-gradient(180deg,#0f172a,#1e293b);
+  border-radius:18px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+.rocket-stars{position:absolute;inset:0;background-image:
+  radial-gradient(1.5px 1.5px at 15% 20%,#fff,transparent),
+  radial-gradient(1px 1px at 45% 60%,#fff,transparent),
+  radial-gradient(1.5px 1.5px at 75% 30%,#fff,transparent),
+  radial-gradient(1px 1px at 90% 70%,#fff,transparent),
+  radial-gradient(1px 1px at 30% 90%,#fff,transparent);opacity:.8;animation:twinkle 3s infinite}
+@keyframes twinkle{0%,100%{opacity:.8}50%{opacity:.4}}
+.rocket{font-size:3rem;position:absolute;bottom:20px;transition:bottom .6s cubic-bezier(.34,1.56,.64,1);
+  filter:drop-shadow(0 0 12px #f59e0b)}
+.rocket.flame::after{content:"🔥";position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);font-size:1.4rem;animation:flicker .15s infinite}
+@keyframes flicker{0%,100%{opacity:1}50%{opacity:.6}}
+.rocket-track{position:absolute;left:0;right:0;top:0;height:100%;
+  background:linear-gradient(90deg,transparent 49%,#f59e0b33 49%,#f59e0b33 51%,transparent 51%)}
+.rocket-goal{position:absolute;top:10px;left:50%;transform:translateX(-50%);font-size:2rem}
+
+.egg-area{position:relative;width:100%;min-height:220px;background:linear-gradient(180deg,#fef3c7,#fce7f3);
+  border-radius:18px;overflow:hidden;padding:20px;text-align:center}
+.egg-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.egg{font-size:2.6rem;cursor:pointer;transition:.3s;position:relative}
+.egg.cracked{animation:crack .5s forwards}
+@keyframes crack{0%{transform:scale(1)}50%{transform:scale(1.3) rotate(15deg)}100%{transform:scale(0) rotate(180deg);opacity:0}}
+.egg .lbl{position:absolute;top:-8px;left:50%;transform:translateX(-50%);
+  background:#f59e0b;color:#fff;font-size:.7rem;font-weight:900;border-radius:6px;padding:1px 6px}
+
+.word-drop{position:relative;width:100%;height:340px;background:linear-gradient(180deg,#bae6fd,#a7f3d0);
+  border-radius:18px;overflow:hidden;padding:8px}
+.drop-word{position:absolute;font-size:1.1rem;font-weight:900;color:#0369a1;background:#fff;
+  padding:4px 10px;border-radius:10px;box-shadow:0 4px 10px #0002}
+.drop-input{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+  width:220px;padding:10px;font-size:1.1rem;text-align:center;border:3px solid #0ea5e9;border-radius:12px;
+  font-family:'Courier New',monospace;font-weight:900;outline:none;background:#fff;text-transform:uppercase}
+
+.color-typing{width:100%;text-align:center}
+.color-swatch{font-size:5rem;margin:10px 0;animation:bob 1.6s infinite}
+.color-name{font-size:1.5rem;font-weight:900;color:#0369a1;margin-bottom:12px;
+  font-family:'Courier New',monospace;letter-spacing:3px}
+.color-typing input{width:70%;padding:12px;font-size:1.4rem;text-align:center;font-weight:900;
+  border:3px solid #0ea5e9;border-radius:14px;outline:none;font-family:'Courier New',monospace;text-transform:uppercase}
+.color-typing input:focus{border-color:#7c3aed;box-shadow:0 0 0 4px #a78bfa44}
+
+.memory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:100%;max-width:600px;padding:8px}
+.memory-card{aspect-ratio:1;background:linear-gradient(160deg,#7c3aed,#ec4899);border-radius:14px;
+  display:flex;align-items:center;justify-content:center;font-size:2rem;color:#fff;font-weight:900;
+  cursor:pointer;transition:.35s;user-select:none;box-shadow:0 6px 18px #7c3aed44}
+.memory-card:hover{transform:translateY(-3px) scale(1.03)}
+.memory-card.flipped{background:linear-gradient(160deg,#fff,#fef3c7);color:#7c3aed;border:3px solid #fbbf24}
+.memory-card.matched{background:linear-gradient(160deg,#86efac,#16a34a);color:#fff;pointer-events:none}
+
+.help-wrap{max-width:720px;text-align:left;padding:8px 12px}
+.help-wrap h2{color:var(--p);font-size:1.3rem;margin-bottom:8px;text-align:center}
+.help-wrap h3{color:#0369a1;font-size:1rem;margin:10px 0 5px}
+.help-wrap ul{margin-left:18px;margin-bottom:8px}
+.help-wrap li{font-size:.85rem;font-weight:700;color:#334155;margin-bottom:3px;line-height:1.5}
+
+.request-form{max-width:560px;width:100%;display:flex;flex-direction:column;gap:8px;padding:8px}
+.request-form label{font-weight:900;color:#0369a1;font-size:.82rem}
+.request-form input,.request-form textarea,.request-form select{border:2px solid #bae6fd;border-radius:10px;
+  padding:8px;font-family:inherit;font-weight:700;font-size:.85rem;color:#0c4a6e;outline:none;background:#fff}
+.request-form input:focus,.request-form textarea:focus{border-color:#0ea5e9;box-shadow:0 0 0 3px #e0f2fe}
+.request-form textarea{resize:vertical;min-height:80px}
+.request-form button{border:0;border-radius:12px;padding:10px;cursor:pointer;
+  background:linear-gradient(90deg,#0ea5e9,#7c3aed);color:#fff;font-family:inherit;font-weight:900;font-size:.9rem;transition:.2s}
+.request-form button:hover{transform:scale(1.03)}
+.request-note{font-size:.72rem;color:#64748b;font-weight:700;text-align:center;line-height:1.4}
+
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:99}
+.float-star{position:fixed;font-size:2rem;pointer-events:none;z-index:100;animation:flyUp 1.2s ease-out forwards}
+@keyframes flyUp{0%{transform:translate(0,0) scale(1) rotate(0)}100%{transform:translate(0,-260px) scale(2) rotate(360deg);opacity:0}}
+.mascot-popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);font-size:6rem;
+  z-index:101;pointer-events:none;animation:popIn .9s cubic-bezier(.34,1.56,.64,1) forwards}
+@keyframes popIn{0%{transform:translate(-50%,-50%) scale(0) rotate(-30deg)}60%{transform:translate(-50%,-50%) scale(1.3) rotate(10deg)}100%{transform:translate(-50%,-50%) scale(1) rotate(0);opacity:0}}
+.complete{text-align:center;display:flex;flex-direction:column;gap:10px;align-items:center}
+.complete .trophy{font-size:5rem;animation:bob 1s infinite}
+.complete h2{color:#4c1d95;font-size:1.7rem}
+.complete p{font-weight:800;color:#6d28d9}
+
+.bottombar{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;background:#ffffffb8;
+  border-radius:13px;padding:5px;margin-top:6px;font-size:.68rem;font-weight:750}
+.bottombar button{border:0;background:#fff;border-radius:8px;padding:5px 8px;cursor:pointer;
+  font-family:inherit;font-weight:800}
+.bottombar button:hover{background:#f1f5f9}
+kbd{background:#334155;color:#fff;border-radius:5px;padding:1px 5px;font-size:.65rem}
+.hidden{display:none!important}
+
+@media(max-width:900px){
+  html,body{overflow:auto}
+  .app{grid-template-columns:1fr;height:auto;min-height:100vh}
+  .sidebar{flex-direction:row;flex-wrap:wrap;justify-content:center;max-height:none}
+  .logo{width:100%;order:-1}
+  .menu-btn{flex:1 1 110px;padding:8px 6px}
+  .topbar{grid-template-columns:repeat(3,1fr)}
+  .answer-row{grid-template-columns:1fr}
+  .abc-grid{grid-template-columns:repeat(2,1fr)}
+  .memory-grid{grid-template-columns:repeat(3,1fr)}
+}
 </style>
 </head>
 <body>
-<main class="app">
-<header class="header"><div class="badge">✨ कक्षा 3 हिंदी अभ्यास</div><h1>अक्षर टाइपिंग एडवेंचर</h1><p>हिंदी अक्षर देखकर उसका English रूप टाइप करो</p></header>
-<section class="stats">
- <div class="stat"><small>⭐ SCORE</small><b id="score">0</b></div><div class="stat"><small>✅ MARKS</small><b id="marks">0</b></div><div class="stat"><small>🔥 STREAK</small><b id="streak">0</b></div><div class="stat"><small>🎯 QUESTION</small><b id="question">1/1</b></div><div class="stat"><small>📝 ATTEMPTS</small><b id="attempts">0</b></div>
-</section>
-<div class="progress"><div id="bar"></div></div>
-<section class="card">
- <div id="play" class="play">
-  <div id="stars" class="stars">☆ ☆ ☆ ☆ ☆</div><p class="instruction">इस अक्षर का ENGLISH रूप टाइप करो</p><div id="letter" class="letter">अ</div>
-  <div><div class="controls"><button id="speak" class="small-btn" type="button">🔊 सुनें</button><button id="hintBtn" class="small-btn hint" type="button">💡 Hint</button></div><p id="hint" class="hint-line"></p></div>
-  <form id="form" class="answer-row"><input id="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type here..." autofocus enabled><button class="check" type="submit">Check Answer</button></form>
-  <p id="message" class="message" aria-live="polite"></p>
- </div>
- <div id="complete" class="complete hidden"><div class="trophy">🏆</div><h2>बहुत बढ़िया!</h2><p>सभी अभ्यास पूरे हुए।</p><h3 id="final"></h3><button id="again" class="small-btn">फिर से खेलें</button></div>
-</section>
-<footer class="bottom"><button id="restart">↻ Restart</button><button id="reshuffle">🔀 Reshuffle</button><span><kbd>Enter</kbd> Check</span><span><kbd>Esc</kbd> Clear</span><span><kbd>Backspace</kbd> Delete</span><span><kbd>Caps Lock</kbd> <b id="caps">OFF</b></span></footer>
-</main>
+<canvas id="confetti"></canvas>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo" id="appTitle">🌟 Kids Learning Adventure 🌟<br><small id="appSub">Learn · Play · Win</small></div>
+    <button class="menu-btn active" data-tab="hindi"><span class="ico">📖</span><span data-i18n="menuHindi">Hindi Letters</span></button>
+    <button class="menu-btn" data-tab="add"><span class="ico">➕</span><span data-i18n="menuAdd">Addition</span></button>
+    <button class="menu-btn" data-tab="sub"><span class="ico">➖</span><span data-i18n="menuSub">Subtraction</span></button>
+    <button class="menu-btn" data-tab="mul"><span class="ico">✖️</span><span data-i18n="menuMul">Multiply</span></button>
+    <button class="menu-btn" data-tab="div"><span class="ico">➗</span><span data-i18n="menuDiv">Division</span></button>
+    <button class="menu-btn" data-tab="tables"><span class="ico">📊</span><span data-i18n="menuTables">Tables</span></button>
+    <button class="menu-btn" data-tab="tblPractice"><span class="ico">🧩</span><span data-i18n="menuPractice">Table Practice</span></button>
+    <button class="menu-btn" data-tab="abc"><span class="ico">🅰️</span><span data-i18n="menuABC">A for Apple</span></button>
+    <button class="menu-btn" data-tab="typing"><span class="ico">⌨️</span><span data-i18n="menuTyping">Typing Games</span></button>
+    <button class="menu-btn" data-tab="help"><span class="ico">❓</span><span data-i18n="menuHelp">Help</span></button>
+    <button class="menu-btn" data-tab="request"><span class="ico">💌</span><span data-i18n="menuRequest">More Features</span></button>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="stat"><small>⭐ SCORE</small><b id="score">0</b></div>
+      <div class="stat"><small>✅ MARKS</small><b id="marks">0</b></div>
+      <div class="stat"><small>🔥 STREAK</small><b id="streak">0</b></div>
+      <div class="stat"><small>🎯 QUESTION</small><b id="question">1/1</b></div>
+      <div class="stat"><small>🪙 COINS</small><b id="coins">0</b></div>
+    </div>
+    <div class="progress"><div id="bar"></div></div>
+
+    <div class="toolbar">
+      <div class="group">
+        <span class="label">🌐 <span data-i18n="langLabel">Language</span>:</span>
+        <button data-lang="en" class="active">English</button>
+        <button data-lang="hi">हिंदी</button>
+      </div>
+      <div class="group">
+        <span class="label">🗣️ <span data-i18n="voiceLabel">Voice</span>:</span>
+        <button data-v="mix" class="active">🎲 Mix</button>
+        <button data-v="female">👩 F</button>
+        <button data-v="male">👨 M</button>
+        <button data-v="child">🧒 C</button>
+      </div>
+      <div class="group">
+        <button id="testVoice" title="Test voice">🔔 Test Voice</button>
+        <span class="voice-status" id="voiceStatus">⏳ Loading voices...</span>
+      </div>
+    </div>
+
+    <div class="panel" id="panel"></div>
+
+    <div class="bottombar">
+      <button id="restart">↻ Restart</button>
+      <button id="soundToggle">🔊 Sound ON</button>
+      <button id="voiceToggle">🗣️ Voice ON</button>
+      <button id="natureToggle">🌿 Nature ON</button>
+      <span><kbd>Enter</kbd> Next</span>
+      <span><kbd>Esc</kbd> Clear</span>
+      <span>Caps: <b id="caps">OFF</b></span>
+    </div>
+  </main>
+</div>
+
 <script>
+/* =========================================================
+   🛑 AUDIO KILL SWITCH — stops all pending audio + speech
+   Called on every button click / tab switch / game change
+   ========================================================= */
+let pendingAudioTimers = [];   // setTimeout ids for scheduled tones
+let pendingAnimFrames = [];    // requestAnimationFrame ids for scheduled anims
+
+/* Wrapped setTimeout that registers itself so killAllAudio() can clear it */
+function safeTimeout(fn, ms){
+  const id = setTimeout(()=>{
+    pendingAudioTimers = pendingAudioTimers.filter(t=>t!==id);
+    try{ fn(); }catch(e){}
+  }, ms);
+  pendingAudioTimers.push(id);
+  return id;
+}
+function clearAllPendingTimers(){
+  pendingAudioTimers.forEach(id=>{ try{ clearTimeout(id); }catch(e){} });
+  pendingAudioTimers = [];
+  pendingAnimFrames.forEach(id=>{ try{ cancelAnimationFrame(id); }catch(e){} });
+  pendingAnimFrames = [];
+}
+
+/* THE MAIN FUNCTION — kills ALL audio */
+function killAllAudio(){
+  // 1. Stop all speech synthesis
+  if("speechSynthesis" in window){
+    try{ speechSynthesis.cancel(); }catch(e){}
+  }
+  // 2. Clear all scheduled tone timers
+  clearAllPendingTimers();
+  // 3. Stop all currently playing oscillators
+  stopAllOscillators();
+  // 4. Reset voice status pill
+  if(voicesReady) updateVoiceStatusFromAll();
+}
+
+/* Keep track of live oscillators so we can stop them */
+let liveOscillators = new Set();
+const _origCreateOscillator = null; // placeholder
+
+function stopAllOscillators(){
+  liveOscillators.forEach(osc=>{
+    try{ osc.stop(0); }catch(e){}
+  });
+  liveOscillators.clear();
+}
+
+/* =========================================================
+   i18n
+   ========================================================= */
+let appLang = "en";
+const i18n = {
+  en:{
+    appTitle:"🌟 Kids Learning Adventure 🌟", appSub:"Learn · Play · Win",
+    menuHindi:"Hindi Letters", menuAdd:"Addition", menuSub:"Subtraction",
+    menuMul:"Multiply", menuDiv:"Division", menuTables:"Tables",
+    menuPractice:"Table Practice", menuABC:"A for Apple", menuTyping:"Typing Games",
+    menuHelp:"Help", menuRequest:"More Features",
+    langLabel:"Language", voiceLabel:"Voice",
+    instructionHindi:"Type the ENGLISH form of this letter",
+    instructionMath:"Type the answer",
+    placeholderType:"Type here...", placeholderTypeHindi:"यहाँ लिखो...",
+    btnCheck:"Check ✓", btnListen:"🔊 Listen", btnHint:"💡 Hint",
+    correctMsg:"✓ Correct! +1 Mark", wrongMsg:"Oops! Try again 🙈",
+    hintPrefix:"Hint", hintLetters:"letters",
+    praise:["Wow! Correct! 🌟","Excellent! 🎉","Amazing! 🏆","Superb! ⭐","Bravo! 🎊"],
+    speakTryAgain:"Try again",
+    tablesTitle:"📊 Tables (1 to 20)",
+    tableMul:"✖️ Multiplication Table", tableAdd:"➕ Addition Table",
+    readHuman:"🗣️ Read in Human Voice",
+    practiceTitle:"🧩 Table Practice — Fill in the blanks",
+    btnCheckAll:"✓ Check All", btnNew:"🔄 New",
+    abcTitle:"🅰️ A for Apple — Varnamala",
+    typingTitle:"⌨️ Typing Games — Pick one!",
+    helpTitle:"❓ How to Play — Help & Tips",
+    requestTitle:"💌 Ask for More Features",
+    restart:"↻ Restart", soundON:"🔊 Sound ON", soundOFF:"🔇 Sound OFF",
+    voiceON:"🗣️ Voice ON", voiceOFF:"🤐 Voice OFF",
+    natureON:"🌿 Nature ON", natureOFF:"🍃 Nature OFF"
+  },
+  hi:{
+    appTitle:"🌟 बच्चों का लर्निंग एडवेंचर 🌟", appSub:"सीखो · खेलो · जीतो",
+    menuHindi:"हिंदी अक्षर", menuAdd:"जोड़", menuSub:"घटाव",
+    menuMul:"गुणा", menuDiv:"भाग", menuTables:"पहाड़े",
+    menuPractice:"पहाड़ा अभ्यास", menuABC:"अ से अनार", menuTyping:"टाइपिंग गेम",
+    menuHelp:"मदद", menuRequest:"और फ़ीचर चाहिए",
+    langLabel:"भाषा", voiceLabel:"आवाज़",
+    instructionHindi:"इस अक्षर का ENGLISH रूप टाइप करो",
+    instructionMath:"जवाब टाइप करो",
+    placeholderType:"Type here...", placeholderTypeHindi:"यहाँ लिखो...",
+    btnCheck:"जाँचो ✓", btnListen:"🔊 सुनें", btnHint:"💡 संकेत",
+    correctMsg:"✓ सही जवाब! +1 Mark", wrongMsg:"ओह! फिर कोशिश करो 🙈",
+    hintPrefix:"संकेत", hintLetters:"अक्षर",
+    praise:["वाह! शाबाश! 🌟","बहुत बढ़िया! 🎉","कमाल कर दिया! 🏆","Excellent! ⭐","Wow! सही जवाब! 🎊"],
+    speakTryAgain:"फिर कोशिश करो",
+    tablesTitle:"📊 पहाड़े (1 से 20)",
+    tableMul:"✖️ गुणा पहाड़ा", tableAdd:"➕ जोड़ पहाड़ा",
+    readHuman:"🗣️ मानव आवाज़ में पढ़ो",
+    practiceTitle:"🧩 पहाड़ा अभ्यास — खाली जगह भरो",
+    btnCheckAll:"✓ सब जाँचें", btnNew:"🔄 नया",
+    abcTitle:"🅰️ अ से अनार — वर्णमाला",
+    typingTitle:"⌨️ टाइपिंग गेम — एक चुनो!",
+    helpTitle:"❓ कैसे खेलें — मदद और टिप्स",
+    requestTitle:"💌 और फ़ीचर के लिए पूछो",
+    restart:"↻ फिर से", soundON:"🔊 आवाज़ चालू", soundOFF:"🔇 आवाज़ बंद",
+    voiceON:"🗣️ आवाज़ चालू", voiceOFF:"🤐 आवाज़ बंद",
+    natureON:"🌿 प्रकृति चालू", natureOFF:"🍃 प्रकृति बंद"
+  }
+};
+function t(k){ return i18n[appLang][k] ?? i18n.en[k] ?? k; }
+function applyI18n(){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const v = t(el.dataset.i18n); if(v) el.textContent = v;
+  });
+  $("appTitle").innerHTML = t("appTitle") + "<br><small>" + t("appSub") + "</small>";
+  $("soundToggle").textContent = soundOn ? t("soundON") : t("soundOFF");
+  $("voiceToggle").textContent = voiceOn ? t("voiceON") : t("voiceOFF");
+  $("natureToggle").textContent = natureOn ? t("natureON") : t("natureOFF");
+}
+
+/* =========================================================
+   SOUND ENGINE
+   ========================================================= */
+let audioCtx=null;
+let soundOn=true, voiceOn=true, natureOn=true;
+let voiceStyle="mix";
+
+function ac(){
+  if(!audioCtx){ try{ audioCtx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
+  if(audioCtx && audioCtx.state==="suspended") audioCtx.resume();
+  return audioCtx;
+}
+
+/* Tone — registers oscillator in liveOscillators so we can stop it */
+function tone(freq,dur=0.15,type="sine",vol=0.15,when=0,slideTo=null){
+  if(!soundOn)return;
+  const c=ac(); if(!c)return;
+  const t0=c.currentTime+when;
+  const osc=c.createOscillator(), g=c.createGain();
+  osc.type=type; osc.frequency.setValueAtTime(freq,t0);
+  if(slideTo) osc.frequency.exponentialRampToValueAtTime(slideTo,t0+dur);
+  g.gain.setValueAtTime(0.0001,t0);
+  g.gain.exponentialRampToValueAtTime(vol,t0+0.02);
+  g.gain.exponentialRampToValueAtTime(0.0001,t0+dur);
+  osc.connect(g); g.connect(c.destination);
+  liveOscillators.add(osc);
+  osc.onended = ()=>{ liveOscillators.delete(osc); };
+  osc.start(t0); osc.stop(t0+dur+0.05);
+}
+
+function noise(dur=0.2,vol=0.1,filtFreq=2000,type="bandpass"){
+  if(!soundOn)return;
+  const c=ac(); if(!c)return;
+  const n=Math.floor(c.sampleRate*dur);
+  const buf=c.createBuffer(1,n,c.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<n;i++)d[i]=Math.random()*2-1;
+  const src=c.createBufferSource(); src.buffer=buf;
+  const flt=c.createBiquadFilter(); flt.type=type; flt.frequency.value=filtFreq;
+  const g=c.createGain();
+  g.gain.setValueAtTime(vol,c.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.0001,c.currentTime+dur);
+  src.connect(flt); flt.connect(g); g.connect(c.destination);
+  src.start(); src.stop(c.currentTime+dur);
+}
+
+function birdChu(){ if(!soundOn)return; const b=1600+Math.random()*400;
+  tone(b,.06,"sine",.12,0); tone(b+300,.06,"sine",.12,.09); tone(b+500,.08,"sine",.12,.18); }
+function birdChuLong(){ if(!soundOn)return; const b=1500+Math.random()*500;
+  [0,.08,.16,.28].forEach((t,i)=>tone(b+i*250,.05,"sine",.11,t)); }
+function tigerRoar(){ if(!soundOn)return; const c=ac(); if(!c)return; const t0=c.currentTime;
+  const osc=c.createOscillator(), g=c.createGain(), flt=c.createBiquadFilter();
+  flt.type="lowpass"; flt.frequency.value=900; osc.type="sawtooth";
+  osc.frequency.setValueAtTime(110,t0);
+  osc.frequency.linearRampToValueAtTime(140,t0+.3);
+  osc.frequency.linearRampToValueAtTime(90,t0+.7);
+  g.gain.setValueAtTime(0.0001,t0);
+  g.gain.exponentialRampToValueAtTime(.18,t0+.08);
+  g.gain.exponentialRampToValueAtTime(.0001,t0+.75);
+  osc.connect(flt);flt.connect(g);g.connect(c.destination);
+  liveOscillators.add(osc);
+  osc.onended=()=>liveOscillators.delete(osc);
+  osc.start(t0);osc.stop(t0+.8); noise(.5,.05,300,"lowpass"); }
+function elephantTrumpet(){ if(!soundOn)return; const c=ac(); if(!c)return; const t0=c.currentTime;
+  const osc=c.createOscillator(), g=c.createGain(); osc.type="square";
+  osc.frequency.setValueAtTime(280,t0);
+  osc.frequency.linearRampToValueAtTime(520,t0+.25);
+  osc.frequency.linearRampToValueAtTime(700,t0+.5);
+  osc.frequency.linearRampToValueAtTime(420,t0+.8);
+  g.gain.setValueAtTime(0.0001,t0);
+  g.gain.exponentialRampToValueAtTime(.14,t0+.05);
+  g.gain.exponentialRampToValueAtTime(.0001,t0+.85);
+  osc.connect(g);g.connect(c.destination);
+  liveOscillators.add(osc);
+  osc.onended=()=>liveOscillators.delete(osc);
+  osc.start(t0);osc.stop(t0+.9); }
+function monkeyOoo(){ if(!soundOn)return;
+  tone(500,.1,"triangle",.13,0,750); tone(520,.1,"triangle",.13,.15,400); tone(600,.12,"triangle",.13,.3,800); }
+function frogCroak(){ if(!soundOn)return;
+  tone(180,.12,"sawtooth",.12,0,240); tone(200,.14,"sawtooth",.12,.15,150); }
+function waterDrop(){ if(!soundOn)return; tone(900,.12,"sine",.12,0,300); }
+function sparkle(){ if(!soundOn)return; [660,880,1100,1320].forEach((f,i)=>tone(f,.14,"sine",.13,i*.08)); }
+function gentleTry(){ if(!soundOn)return; tone(500,.15,"sine",.12,0); tone(380,.2,"sine",.12,.15); }
+function fanfare(){ if(!soundOn)return; [523,659,784,1047,1319].forEach((f,i)=>tone(f,.22,"triangle",.15,i*.12));
+  safeTimeout(()=>birdChuLong(),700); }
+function typeClick(){ if(!soundOn)return; tone(1200+Math.random()*200,.03,"square",.05); }
+function popSound(){ if(!soundOn)return; tone(900,.08,"square",.15,0,200); }
+function jumpSound(){ if(!soundOn)return; tone(500,.1,"triangle",.15,0,900); }
+function randomAnimalCheer(){
+  const arr=[birdChuLong,tigerRoar,elephantTrumpet,monkeyOoo,frogCroak,birdChu];
+  arr[Math.floor(Math.random()*arr.length)]();
+}
+
+/* =========================================================
+   HUMAN VOICE
+   ========================================================= */
+const voicePresets={
+  female:{rate:0.92, pitch:1.30, label:"👩 Female"},
+  male:{rate:0.88, pitch:0.80, label:"👨 Male"},
+  child:{rate:1.00, pitch:1.60, label:"🧒 Child"}
+};
+
+let allVoices = [];
+let voicesReady = false;
+let voiceEngineUnlocked = false;
+
+function loadVoicesAsync(){
+  return new Promise((resolve)=>{
+    if(!("speechSynthesis" in window)){ resolve([]); return; }
+    const check = ()=>{
+      const v = speechSynthesis.getVoices();
+      if(v && v.length > 0){ allVoices = v; voicesReady = true; resolve(v); return true; }
+      return false;
+    };
+    if(check()) return;
+    let resolved = false;
+    const done = ()=>{ if(resolved) return; resolved=true; resolve(allVoices); };
+    speechSynthesis.onvoiceschanged = ()=>{ if(check()){ updateVoiceStatusFromAll(); done(); } };
+    let tries = 0;
+    const iv = setInterval(()=>{
+      if(check()){ updateVoiceStatusFromAll(); clearInterval(iv); done(); return; }
+      if(++tries > 15){ clearInterval(iv); done(); }
+    }, 250);
+    setTimeout(()=>{ if(!resolved){ clearInterval(iv); done(); } }, 4000);
+  });
+}
+
+function updateVoiceStatusFromAll(){
+  const hi = allVoices.filter(v=>v.lang.toLowerCase().startsWith("hi")).length;
+  const en = allVoices.filter(v=>v.lang.toLowerCase().startsWith("en")).length;
+  const el = document.getElementById("voiceStatus");
+  if(!el) return;
+  el.textContent = `✅ ${allVoices.length} voices (hi:${hi} en:${en})`;
+  el.classList.remove("error");
+  el.classList.remove("speaking");
+}
+function updateVoiceStatus(txt, speaking, isError){
+  const el = document.getElementById("voiceStatus");
+  if(!el) return;
+  el.textContent = txt;
+  el.classList.toggle("speaking", !!speaking);
+  el.classList.toggle("error", !!isError);
+}
+
+let bannerTimeout = null;
+function showVoiceBanner(msg, duration=7000){
+  const old = document.querySelector(".voice-banner");
+  if(old) old.remove();
+  const b = document.createElement("div");
+  b.className = "voice-banner";
+  b.innerHTML = msg;
+  document.querySelector(".main").appendChild(b);
+  clearTimeout(bannerTimeout);
+  bannerTimeout = setTimeout(()=>b.remove(), duration);
+}
+
+function unlockVoiceEngine(){
+  if(voiceEngineUnlocked) return;
+  if(!("speechSynthesis" in window)) return;
+  try{
+    const u = new SpeechSynthesisUtterance(" ");
+    u.volume = 0;
+    u.rate = 2;
+    speechSynthesis.speak(u);
+    voiceEngineUnlocked = true;
+  }catch(e){}
+}
+
+function pickVoiceStyle(){
+  if(voiceStyle!=="mix") return voiceStyle;
+  const a=["female","male","child"];
+  return a[Math.floor(Math.random()*a.length)];
+}
+
+function pickBestVoice(text, requestedLang){
+  if(!allVoices.length) return null;
+  const isDevanagari = /[\u0900-\u097F]/.test(text);
+  const tl = (requestedLang||"en").slice(0,2).toLowerCase();
+  let v = allVoices.find(x=>x.lang.toLowerCase().startsWith(tl));
+  if(v) return v;
+  if(isDevanagari){
+    v = allVoices.find(x=>x.lang.toLowerCase().startsWith("hi"));
+    if(v) return v;
+  }
+  v = allVoices.find(x=>x.lang.toLowerCase().startsWith("en"));
+  if(v) return v;
+  return allVoices[0] || null;
+}
+
+function speak(text, lang, onend, forcedStyle){
+  if(!voiceOn || !("speechSynthesis" in window)){
+    if(onend) safeTimeout(onend, 30);
+    return;
+  }
+  if(!voicesReady){
+    loadVoicesAsync().then(()=>speak(text, lang, onend, forcedStyle));
+    return;
+  }
+  try{ speechSynthesis.cancel(); }catch(e){}
+  const key = forcedStyle || pickVoiceStyle();
+  const preset = voicePresets[key];
+  const useLang = lang || (appLang==="hi" ? "hi-IN" : "en-IN");
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = useLang;
+  u.rate = preset.rate;
+  u.pitch = preset.pitch;
+  u.volume = 1.0;
+  const v = pickBestVoice(text, useLang);
+  if(v) u.voice = v;
+  u.onstart = ()=>{ updateVoiceStatus(`🗣️ Speaking (${preset.label})...`, true); };
+  u.onend = ()=>{ if(voicesReady) updateVoiceStatusFromAll(); if(onend) onend(); };
+  u.onerror = ()=>{ if(voicesReady) updateVoiceStatusFromAll(); if(onend) onend(); };
+  try{ speechSynthesis.speak(u); }catch(err){ if(onend) onend(); }
+}
+
+function testVoice(){
+  killAllAudio(); // stop any prior
+  if(!("speechSynthesis" in window)){
+    showVoiceBanner("❌ Your browser doesn't support voice. Try Chrome or Edge.");
+    return;
+  }
+  if(!voicesReady){
+    showVoiceBanner("⏳ Still loading voices — please wait 1 second and try again.");
+    return;
+  }
+  const demo = appLang==="hi"
+    ? "नमस्ते बच्चों! मैं तुम्हारी शिक्षक हूँ।"
+    : "Hello kids! I am your learning friend. Let's start studying together!";
+  speak(demo, null, null, pickVoiceStyle());
+  showVoiceBanner(`✅ Voice test playing (${allVoices.length} voices available)`, 3000);
+}
+
+/* Table reader — registers its own loop timer so killAllAudio can stop it */
+let tableReaderTimerId = null;
+function readTableHuman(table, mode){
+  killAllAudio(); // stop any prior reading
+  const isHi = appLang==="hi";
+  const op = mode==="mul" ? (isHi?"गुणा":"times") : (isHi?"जमा":"plus");
+  const eq = isHi ? "बराबर" : "equals";
+  let i=1;
+  let cancelled = false;
+  const ticks=[birdChu, waterDrop, frogCroak, birdChuLong, monkeyOoo];
+
+  function nextLine(){
+    if(cancelled) return;
+    if(i>20){ fanfare(); updateVoiceStatusFromAll(); return; }
+    const res = mode==="mul" ? table*i : table+i;
+    const line = `${table} ${op} ${i} ${eq} ${res}`;
+    const forced = ["female","male","child"][(i-1)%3];
+    const style = voiceStyle==="mix" ? forced : voiceStyle;
+    if(!voiceOn){
+      try{ ticks[(i-1)%ticks.length](); }catch(e){}
+      i++;
+      tableReaderTimerId = safeTimeout(nextLine, 400);
+      return;
+    }
+    speak(line, isHi?"hi-IN":"en-IN", ()=>{
+      if(cancelled) return;
+      try{ ticks[(i-1)%ticks.length](); }catch(e){}
+      i++;
+      tableReaderTimerId = safeTimeout(nextLine, 200);
+    }, style);
+  }
+  /* Store cancel handle on the timer chain */
+  readTableHuman.cancel = ()=>{ cancelled = true; };
+  nextLine();
+}
+
+function speakChar(ch){
+  speak(ch, /[\u0900-\u097F]/.test(ch) ? "hi-IN" : "en-IN", null, pickVoiceStyle());
+}
+
+/* =========================================================
+   DATA
+   ========================================================= */
 const swar=[["अ","a"],["आ","aa"],["इ","i"],["ई","ee"],["उ","u"],["ऊ","oo"],["ऋ","ri"],["ए","e"],["ऐ","ai"],["ओ","o"],["औ","au"],["अं","am"],["अः","ah"]];
-const consonants=[["क","ka"],["ख","kha"],["ग","ga"],["घ","gha"],["च","cha"],["छ","chha"],["ज","ja"],["झ","jha"],["ट","ta"],["ठ","tha"],["ड","da"],["ढ","dha"],["ण","na"],["त","ta"],["थ","tha"],["द","da"],["ध","dha"],["न","na"],["प","pa"],["फ","pha"],["ब","ba"],["भ","bha"],["म","ma"],["य","ya"],["र","ra"],["ल","la"],["ळ","la"],["व","va"],["श","sha"],["ष","sha"],["स","sa"],["ह","ha"],["क्ष","ksha"],["त्र","tra"],["ज्ञ","dnya"],["श्र","shra"]];
-const forms=[["",""] ,["ा","a"],["ि","i"],["ी","ee"],["ु","u"],["ू","oo"],["े","e"],["ै","ai"],["ो","o"],["ौ","au"],["ं","am"],["ः","ah"]];
-function makeBarakhadi(){return consonants.flatMap(([h,base])=>forms.map(([m,s],i)=>({hindi:h+m,answer:i===0?base:base.slice(0,-1)+s,type:"Barakhadi"})))}
-const lessons=[...swar.map(([h,a])=>({hindi:h,answer:a,type:"Swar"})),...consonants.map(([h,a])=>({hindi:h,answer:a,type:"Vyanjan"})),...makeBarakhadi()];
-const $=id=>document.getElementById(id);let order=[],pos=0,score=0,marks=0,streak=0,attempts=0,locked=false;
-function shuffle(){order=lessons.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}}
-function current(){return lessons[order[pos]]}function say(text,lang="hi-IN",done){if(!("speechSynthesis" in window)){done&&done();return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.78;if(done)u.onend=done;speechSynthesis.speak(u)}
-function render(){if(pos>=order.length){$("play").classList.add("hidden");$("complete").classList.remove("hidden");$("final").textContent=`Marks: ${marks} | Score: ${score}`;return}const q=current();$("letter").textContent=q.hindi;$("question").textContent=`${pos+1}/${order.length}`;$("score").textContent=score;$("marks").textContent=marks;$("streak").textContent=streak;$("attempts").textContent=attempts;$("bar").style.width=`${pos/order.length*100}%`;const n=Math.min(5,Math.floor(streak/3));$("stars").textContent="★ ".repeat(n)+"☆ ".repeat(5-n);$("answer").value="";$("answer").className="";$("answer").disabled=false;$("hint").textContent="";$("message").textContent="";$("message").className="message";$("answer").focus();setTimeout(()=>say(q.hindi),200)}
-function check(e){e.preventDefault();if(locked||!$("answer").value.trim())return;attempts++;$("attempts").textContent=attempts;if($("answer").value.trim().toLowerCase()===current().answer.toLowerCase()){locked=true;score+=10;marks++;streak++;$("answer").classList.add("ok");$("message").textContent="✓ सही जवाब! +1 Mark";$("message").className="message success";const praise=["Nice! Correct answer!","बहुत बढ़िया! सही जवाब!","शाबाश! सही जवाब!"][marks%3];say(praise,praise.includes("answer")?"en-IN":"hi-IN",()=>setTimeout(()=>{pos++;locked=false;render()},150))}else{streak=0;$("streak").textContent=0;$("answer").classList.add("bad");$("answer").value="";$("message").textContent="Oops! Try again";$("message").className="message error";say("Oops! Try again","en-IN",()=>{$("answer").classList.remove("bad");$("answer").focus()})}}
-function reset(){speechSynthesis?.cancel?.();shuffle();pos=score=marks=streak=attempts=0;locked=false;$("play").classList.remove("hidden");$("complete").classList.add("hidden");render()}
-$("form").addEventListener("submit",check);$("answer").addEventListener("input",e=>e.target.value=e.target.value.replace(/[^a-zA-Z]/g,""));$("speak").onclick=()=>say(current().hindi);$("hintBtn").onclick=()=>$("hint").textContent=`Hint: ${current().answer[0]} • ${current().answer.length} letters • ${current().type}`;$("restart").onclick=reset;$("reshuffle").onclick=reset;$("again").onclick=reset;
-document.addEventListener("keydown",e=>{const on=e.getModifierState&&e.getModifierState("CapsLock");$("caps").textContent=on?"ON":"OFF";if(e.key==="Escape"){$("answer").value="";$("message").textContent="Input cleared";$("answer").focus()}});document.addEventListener("keyup",e=>{if(e.getModifierState)$("caps").textContent=e.getModifierState("CapsLock")?"ON":"OFF"});
-reset();
+const consonants=[["क","ka"],["ख","kha"],["ग","ga"],["घ","gha"],["च","cha"],["छ","chha"],["ज","ja"],["झ","jha"],["ट","ta"],["ठ","tha"],["ड","da"],["ढ","dha"],["ण","na"],["त","ta"],["थ","tha"],["द","da"],["ध","dha"],["न","na"],["प","pa"],["फ","pha"],["ब","ba"],["भ","bha"],["म","ma"],["य","ya"],["र","ra"],["ल","la"],["ळ","la"],["व","va"],["श","sha"],["ष","sha"],["स","sa"],["ह","ha"]];
+const forms=[["",""],["ा","a"],["ि","i"],["ी","ee"],["ु","u"],["ू","oo"],["े","e"],["ै","ai"],["ो","o"],["ौ","au"],["ं","am"],["ः","ah"]];
+function makeBarakhadi(){return consonants.flatMap(([h,base])=>forms.map(([m,s],i)=>({
+  q:h+m, a:i===0?base:base.slice(0,-1)+s, type:"Barakhadi"})));}
+const hindiLessons=[
+  ...swar.map(([h,a])=>({q:h,a,type:"Swar"})),
+  ...consonants.map(([h,a])=>({q:h,a,type:"Vyanjan"})),
+  ...makeBarakhadi()
+];
+const abcData=[
+  {h:"अ",w:"Anar",e:"🍎",hw:"अनार"},{h:"आ",w:"Aam",e:"🥭",hw:"आम"},
+  {h:"इ",w:"Imli",e:"🌿",hw:"इमली"},{h:"ई",w:"Eekh",e:"🎋",hw:"ईख"},
+  {h:"उ",w:"Ullu",e:"🦉",hw:"उल्लू"},{h:"ऊ",w:"Oon",e:"🧶",hw:"ऊन"},
+  {h:"ऋ",w:"Rishi",e:"🧘",hw:"ऋषि"},{h:"ए",w:"Eri",e:"🦶",hw:"एड़ी"},
+  {h:"ऐ",w:"Ainak",e:"👓",hw:"ऐनक"},{h:"ओ",w:"Okhli",e:"🥣",hw:"ओखली"},
+  {h:"औ",w:"Aurat",e:"👩",hw:"औरत"},{h:"अं",w:"Angoor",e:"🍇",hw:"अंगूर"},
+  {h:"क",w:"Kabootar",e:"🕊️",hw:"कबूतर"},{h:"ख",w:"Khargosh",e:"🐰",hw:"खरगोश"},
+  {h:"ग",w:"Gamla",e:"🪴",hw:"गमला"},{h:"घ",w:"Ghar",e:"🏠",hw:"घर"},
+  {h:"च",w:"Chammach",e:"🥄",hw:"चम्मच"},{h:"छ",w:"Chhatri",e:"☂️",hw:"छतरी"},
+  {h:"ज",w:"Jahaj",e:"🚢",hw:"जहाज"},{h:"झ",w:"Jhanda",e:"🚩",hw:"झंडा"},
+  {h:"ट",w:"Tamatar",e:"🍅",hw:"टमाटर"},{h:"ठ",w:"Thela",e:"🛒",hw:"ठेला"},
+  {h:"ड",w:"Damroo",e:"🥁",hw:"डमरू"},{h:"ढ",w:"Dhol",e:"🥁",hw:"ढोल"},
+  {h:"त",w:"Tarbooz",e:"🍉",hw:"तरबूज"},{h:"थ",w:"Thali",e:"🍽️",hw:"थाली"},
+  {h:"द",w:"Dawa",e:"💊",hw:"दवा"},{h:"ध",w:"Dhanush",e:"🏹",hw:"धनुष"},
+  {h:"न",w:"Nal",e:"🚰",hw:"नल"},{h:"प",w:"Patang",e:"🪁",hw:"पतंग"},
+  {h:"फ",w:"Phool",e:"🌸",hw:"फूल"},{h:"ब",w:"Bakri",e:"🐐",hw:"बकरी"},
+  {h:"भ",w:"Bhaloo",e:"🐻",hw:"भालू"},{h:"म",w:"Machhli",e:"🐟",hw:"मछली"},
+  {h:"य",w:"Yagya",e:"🔥",hw:"यज्ञ"},{h:"र",w:"Rath",e:"🛕",hw:"रथ"},
+  {h:"ल",w:"Laddoo",e:"🍬",hw:"लड्डू"},{h:"व",w:"Violin",e:"🎻",hw:"वायलिन"},
+  {h:"श",w:"Sher",e:"🦁",hw:"शेर"},{h:"ष",w:"Shatkon",e:"⭐",hw:"षट्कोण"},
+  {h:"स",w:"Suraj",e:"☀️",hw:"सूरज"},{h:"ह",w:"Haathi",e:"🐘",hw:"हाथी"}
+];
+/* 🐷 PIG REMOVED */
+const animals=["🦁","🐘","🐵","🐰","🦊","🐼","🐨","🐸","🦉","🐯","🐮","🦄","🐧","🦒","🐬","🐶","🐱","🐻","🦝"];
+
+/* =========================================================
+   STATE
+   ========================================================= */
+const $ = id=>document.getElementById(id);
+let mode="hindi";
+let lessons=[], order=[], pos=0;
+let score=0,marks=0,streak=0,coins=0,locked=false;
+let currentTable=2, currentTableMode="mul";
+let currentPracTable=2, currentPracMode="mul";
+
+/* Confetti */
+const cvs=$("confetti"), ctx2=cvs.getContext("2d");
+let confetti=[];
+function resizeCanvas(){cvs.width=innerWidth;cvs.height=innerHeight}
+resizeCanvas(); addEventListener("resize",resizeCanvas);
+function burst(x,y,n=50){
+  const colors=["#f43f5e","#fbbf24","#10b981","#3b82f6","#a855f7","#ec4899","#22d3ee"];
+  for(let i=0;i<n;i++){
+    confetti.push({x,y,vx:(Math.random()-.5)*11,vy:Math.random()*-11-3,g:.35,life:85,
+      color:colors[i%colors.length],size:Math.random()*8+4,rot:Math.random()*Math.PI});
+  }
+}
+function animConfetti(){
+  ctx2.clearRect(0,0,cvs.width,cvs.height);
+  confetti=confetti.filter(p=>p.life>0);
+  confetti.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.life--;p.rot+=.2;
+    ctx2.save();ctx2.translate(p.x,p.y);ctx2.rotate(p.rot);
+    ctx2.fillStyle=p.color;ctx2.fillRect(-p.size/2,-p.size/2,p.size,p.size);ctx2.restore();});
+  requestAnimationFrame(animConfetti);
+}
+animConfetti();
+function flyingStar(x,y){
+  const el=document.createElement("div"); el.className="float-star"; el.textContent="⭐";
+  el.style.left=x+"px"; el.style.top=y+"px";
+  document.body.appendChild(el); setTimeout(()=>el.remove(),1300);
+}
+function plusOne(x,y){
+  const el=document.createElement("div"); el.className="plus-one"; el.textContent="+1";
+  el.style.left=x+"px"; el.style.top=y+"px";
+  document.body.appendChild(el); setTimeout(()=>el.remove(),1200);
+}
+function mascotPop(){
+  const el=document.createElement("div"); el.className="mascot-popup";
+  el.textContent=animals[Math.floor(Math.random()*animals.length)];
+  document.body.appendChild(el); setTimeout(()=>el.remove(),950);
+}
+
+/* Math */
+function rnd(max,min=1){return Math.floor(Math.random()*(max-min+1))+min}
+function genMath(type){
+  const hi=20; let a,b,q,ans;
+  if(type==="add"){a=rnd(hi);b=rnd(hi);q=`${a} + ${b}`;ans=a+b;}
+  else if(type==="sub"){a=rnd(hi);b=rnd(a);q=`${a} − ${b}`;ans=a-b;}
+  else if(type==="mul"){a=rnd(10);b=rnd(10);q=`${a} × ${b}`;ans=a*b;}
+  else if(type==="div"){b=rnd(10,2);ans=rnd(10,1);a=b*ans;q=`${a} ÷ ${b}`;}
+  return {q,a:String(ans),type:type.toUpperCase()};
+}
+function buildLessons(){
+  if(mode==="hindi") lessons=hindiLessons.map(x=>({q:x.q,a:x.a,type:x.type}));
+  else if(mode==="add")lessons=Array.from({length:20},()=>genMath("add"));
+  else if(mode==="sub")lessons=Array.from({length:20},()=>genMath("sub"));
+  else if(mode==="mul")lessons=Array.from({length:20},()=>genMath("mul"));
+  else if(mode==="div")lessons=Array.from({length:20},()=>genMath("div"));
+  else lessons=[];
+}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+/* Question */
+function renderQuestion(){
+  if(pos>=order.length){renderComplete();return}
+  const q=order[pos];
+  const isHindi = mode==="hindi";
+  $("panel").innerHTML=`
+    <div class="play slide-in" id="playArea">
+      <p class="instruction">${isHindi ? t("instructionHindi") : t("instructionMath")}</p>
+      <div class="qbox" id="qbox">
+        <div class="mascot">${animals[Math.floor(Math.random()*animals.length)]}</div>
+        <div class="qtext">${q.q}</div>
+      </div>
+      <div class="controls">
+        <button class="small-btn speak" id="speakBtn">${t("btnListen")}</button>
+        <button class="small-btn hint" id="hintBtn">${t("btnHint")}</button>
+      </div>
+      <div class="hint-line" id="hintLine"></div>
+      <form id="form" class="answer-row" style="width:100%">
+        <input id="answer" autocomplete="off" placeholder="${isHindi?t("placeholderTypeHindi"):t("placeholderType")}">
+        <button type="submit" class="check">${t("btnCheck")}</button>
+      </form>
+      <p class="message" id="message"></p>
+    </div>`;
+  $("speakBtn").onclick=()=>{ killAllAudio(); speak(q.q); };
+  $("hintBtn").onclick=()=>{ killAllAudio(); $("hintLine").textContent=`${t("hintPrefix")}: ${q.a[0]} • ${q.a.length} ${t("hintLetters")} • ${q.type}`; birdChu(); };
+  $("form").addEventListener("submit",checkAnswer);
+  $("answer").addEventListener("input",e=>{
+    if(isHindi) e.target.value=e.target.value.replace(/[^a-zA-Z]/g,"");
+    else e.target.value=e.target.value.replace(/[^0-9\-]/g,"");
+    typeClick();
+  });
+  $("answer").focus();
+  safeTimeout(()=>{ speak(q.q); safeTimeout(()=>birdChu(), 700); }, 350);
+}
+function checkAnswer(e){
+  e.preventDefault();
+  if(locked)return;
+  const val=$("answer").value.trim(); if(!val)return;
+  const cur=order[pos];
+  if(val.toLowerCase()===cur.a.toLowerCase()){
+    locked=true; score+=10; marks++; streak++; coins+=5;
+    $("answer").classList.add("ok");
+    $("qbox").classList.add("flash-ok");
+    $("message").textContent=t("correctMsg"); $("message").className="message success";
+    const r=$("answer").getBoundingClientRect();
+    burst(r.left+r.width/2,r.top,55);
+    flyingStar(r.left+r.width/2,r.top);
+    plusOne(r.left+r.width-20, r.top);
+    sparkle();
+    safeTimeout(()=>randomAnimalCheer(),250);
+    if(streak%5===0) mascotPop();
+    const praiseArr = t("praise");
+    speak(praiseArr[Math.floor(Math.random()*praiseArr.length)]);
+    updateStats();
+    safeTimeout(()=>{
+      const play = $("playArea");
+      if(play) play.classList.add("slide-out");
+      safeTimeout(()=>{ pos++; locked=false; renderQuestion(); }, 380);
+    }, 900);
+  }else{
+    streak=0;
+    $("answer").classList.add("bad");
+    $("qbox").classList.add("flash-bad");
+    $("answer").value="";
+    $("message").textContent=t("wrongMsg"); $("message").className="message error";
+    gentleTry(); speak(t("speakTryAgain"));
+    updateStats();
+    safeTimeout(()=>{
+      $("answer").classList.remove("bad");
+      $("qbox").classList.remove("flash-bad");
+      $("answer").focus();
+    },650);
+  }
+}
+function updateStats(){
+  $("score").textContent=score;
+  $("marks").textContent=marks;
+  $("streak").textContent=streak;
+  $("coins").textContent=coins;
+  const total=order.length||1;
+  $("question").textContent=`${Math.min(pos+1,total)}/${total}`;
+  $("bar").style.width=`${(pos/total)*100}%`;
+}
+function renderComplete(){
+  const m=marks,total=order.length;
+  const stars=m===total?"⭐⭐⭐":m>total/2?"⭐⭐":"⭐";
+  $("panel").innerHTML=`
+    <div class="complete">
+      <div class="trophy">🏆</div>
+      <h2>${appLang==="hi"?"बहुत बढ़िया!":"Well done!"}</h2>
+      <p>${stars}</p>
+      <p>Marks: ${marks}/${total} | Score: ${score} | 🪙 ${coins}</p>
+      <button class="small-btn" style="padding:12px 26px;font-size:1rem" id="playAgain">🔄 ${appLang==="hi"?"फिर खेलें":"Play again"}</button>
+    </div>`;
+  $("playAgain").onclick=()=>{ killAllAudio(); startMode(mode); };
+  $("bar").style.width="100%";
+  burst(innerWidth/2,innerHeight/2,90);
+  fanfare();
+  speak(appLang==="hi"?"शाबाश! सभी सवाल पूरे हुए":"Wow! All questions done!");
+}
+
+/* 🛑 MAIN TAB SWITCHER — kills ALL audio first */
+function startMode(m){
+  killAllAudio();       // ⬅️ THE FIX
+  mode=m; stopAllTyping();
+  score=0;marks=0;streak=0;coins=0;pos=0;locked=false;
+  document.querySelectorAll(".menu-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab===m));
+  updateStats();
+  if(m==="tables"){ renderTables(); return; }
+  if(m==="tblPractice"){ renderTablePractice(); return; }
+  if(m==="abc"){ renderABC(); return; }
+  if(m==="typing"){ renderTypingMenu(); return; }
+  if(m==="help"){ renderHelp(); return; }
+  if(m==="request"){ renderRequestForm(); return; }
+  buildLessons();
+  order=shuffle([...lessons]);
+  renderQuestion();
+}
+
+/* Tables */
+function renderTables(){
+  $("question").textContent="—"; $("bar").style.width="0%";
+  $("panel").innerHTML=`
+    <div class="tables-wrap">
+      <div class="tables-title">${t("tablesTitle")}</div>
+      <div style="margin-bottom:8px">
+        <button class="chip ${currentTableMode==='mul'?'active':''}" id="mulMode">${t("tableMul")}</button>
+        <button class="chip ${currentTableMode==='add'?'active':''}" id="addMode">${t("tableAdd")}</button>
+        <button class="chip" id="readHuman">${t("readHuman")}</button>
+      </div>
+      <div class="table-chips" id="chips"></div>
+      <div class="table-grid" id="grid"></div>
+    </div>`;
+  $("mulMode").onclick=()=>{ killAllAudio(); currentTableMode="mul";renderTables(); };
+  $("addMode").onclick=()=>{ killAllAudio(); currentTableMode="add";renderTables(); };
+  $("readHuman").onclick=()=>{ readTableHuman(currentTable,currentTableMode); };
+  const chips=$("chips");
+  for(let i=1;i<=20;i++){
+    const b=document.createElement("button");
+    b.className="chip"+(i===currentTable?" active":"");
+    b.textContent=i;
+    b.onclick=()=>{ killAllAudio(); currentTable=i;renderTables();speak(String(i));safeTimeout(birdChu,600); };
+    chips.appendChild(b);
+  }
+  const grid=$("grid");
+  const isHi = appLang==="hi";
+  for(let i=1;i<=20;i++){
+    const op=currentTableMode==="mul"?"×":"+";
+    const res=currentTableMode==="mul"?currentTable*i:currentTable+i;
+    const cell=document.createElement("div");
+    cell.className="tbl-cell";
+    cell.textContent=`${currentTable} ${op} ${i} = ${res}`;
+    cell.onclick=()=>{
+      killAllAudio();
+      const line = isHi
+        ? `${currentTable} ${currentTableMode==="mul"?"गुणा":"जमा"} ${i} बराबर ${res}`
+        : `${currentTable} ${currentTableMode==="mul"?"times":"plus"} ${i} equals ${res}`;
+      speak(line);
+      cell.classList.add("speaking");
+      safeTimeout(()=>cell.classList.remove("speaking"),900);
+    };
+    grid.appendChild(cell);
+  }
+}
+
+/* Table Practice */
+function renderTablePractice(){
+  $("question").textContent="—"; $("bar").style.width="0%";
+  $("panel").innerHTML=`
+    <div class="tables-wrap">
+      <div class="tables-title">${t("practiceTitle")}</div>
+      <div style="margin-bottom:8px">
+        <button class="chip ${currentPracMode==='mul'?'active':''}" id="pMulMode">${t("tableMul")}</button>
+        <button class="chip ${currentPracMode==='add'?'active':''}" id="pAddMode">${t("tableAdd")}</button>
+        <button class="chip" id="pCheckAll">${t("btnCheckAll")}</button>
+        <button class="chip" id="pNew">${t("btnNew")}</button>
+      </div>
+      <div class="table-chips" id="pChips"></div>
+      <div id="pGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px;width:100%;padding:4px"></div>
+    </div>`;
+  $("pMulMode").onclick=()=>{ killAllAudio(); currentPracMode="mul";renderTablePractice(); };
+  $("pAddMode").onclick=()=>{ killAllAudio(); currentPracMode="add";renderTablePractice(); };
+  $("pNew").onclick=()=>{ killAllAudio(); renderTablePractice(); };
+  $("pCheckAll").onclick=()=>{ killAllAudio(); checkAllPractice(); };
+  const chips=$("pChips");
+  for(let i=1;i<=20;i++){
+    const b=document.createElement("button");
+    b.className="chip"+(i===currentPracTable?" active":"");
+    b.textContent=i;
+    b.onclick=()=>{ killAllAudio(); currentPracTable=i;renderTablePractice();speak(String(i));safeTimeout(birdChu,600); };
+    chips.appendChild(b);
+  }
+  const grid=$("pGrid");
+  const op=currentPracMode==="mul"?"×":"+";
+  const rows=[]; while(rows.length<8){const i=rnd(20); if(!rows.includes(i)) rows.push(i);}
+  rows.sort((a,b)=>a-b);
+  rows.forEach((i,idx)=>{
+    const res=currentPracMode==="mul"?currentPracTable*i:currentPracTable+i;
+    const hideAnswer=Math.random()<0.6;
+    const row=document.createElement("div");
+    row.className="practice-row";
+    if(hideAnswer){
+      row.innerHTML=`<span class="practice-q">${currentPracTable} ${op} ${i} =</span>
+        <input class="practice-blank" data-ans="${res}" inputmode="numeric" placeholder="?" data-idx="${idx}">`;
+    }else{
+      row.innerHTML=`<span class="practice-q">${currentPracTable} ${op}</span>
+        <input class="practice-blank" data-ans="${i}" inputmode="numeric" placeholder="?" data-idx="${idx}">
+        <span class="practice-q"> = ${res}</span>`;
+    }
+    grid.appendChild(row);
+  });
+  const blanks = [...document.querySelectorAll(".practice-blank")];
+  blanks.forEach((inp,idx)=>{
+    inp.addEventListener("keydown",(e)=>{
+      if(e.key!=="Enter") return;
+      e.preventDefault();
+      const val = inp.value.trim();
+      const ok = val === inp.dataset.ans;
+      const row = inp.closest(".practice-row");
+      if(ok){
+        inp.classList.add("ok"); row.classList.add("solved");
+        sparkle();
+        const r = inp.getBoundingClientRect();
+        burst(r.left+r.width/2, r.top, 20);
+        plusOne(r.left+r.width-10, r.top);
+        speak(String(inp.dataset.ans));
+        const next = blanks[idx+1];
+        if(next){
+          row.classList.remove("active");
+          next.closest(".practice-row").classList.add("active");
+          safeTimeout(()=>next.focus(), 200);
+        } else {
+          safeTimeout(checkAllPractice, 400);
+        }
+      } else {
+        inp.classList.add("bad");
+        gentleTry();
+        safeTimeout(()=>inp.classList.remove("bad"), 500);
+      }
+    });
+    inp.addEventListener("focus",()=>{
+      blanks.forEach(b=>b.closest(".practice-row").classList.remove("active"));
+      inp.closest(".practice-row").classList.add("active");
+    });
+  });
+  safeTimeout(()=>{
+    const f=document.querySelector(".practice-blank");
+    if(f){ f.focus(); f.closest(".practice-row").classList.add("active"); }
+  },100);
+}
+function checkAllPractice(){
+  const inputs=document.querySelectorAll(".practice-blank");
+  let correct=0,wrong=0;
+  inputs.forEach(inp=>{
+    const ok=inp.value.trim()===inp.dataset.ans;
+    inp.classList.remove("ok","bad"); inp.classList.add(ok?"ok":"bad");
+    if(ok){correct++; inp.closest(".practice-row").classList.add("solved");}
+    else wrong++;
+  });
+  if(correct>0){ burst(innerWidth/2,innerHeight/2,Math.min(80,correct*10)); sparkle(); safeTimeout(()=>randomAnimalCheer(),300); }
+  if(wrong>0) gentleTry();
+  speak(correct===inputs.length
+    ? (appLang==="hi"?"वाह! सब सही!":"Wow! All correct!")
+    : (appLang==="hi"?"कुछ और कोशिश करो":"Try a bit more"));
+  const toast=document.createElement("div");
+  toast.textContent=(appLang==="hi"?`सही: ${correct} | गलत: ${wrong}`:`Correct: ${correct} | Wrong: ${wrong}`);
+  toast.style.cssText="position:fixed;bottom:70px;left:50%;transform:translateX(-50%);background:#4c1d95;color:#fff;padding:10px 20px;border-radius:12px;font-weight:900;z-index:200;box-shadow:0 8px 24px #0004";
+  document.body.appendChild(toast); safeTimeout(()=>toast.remove(),2200);
+  if(wrong===0 && correct===inputs.length) fanfare();
+}
+
+/* ABC */
+function renderABC(){
+  $("question").textContent="—"; $("bar").style.width="0%";
+  $("panel").innerHTML=`
+    <div class="tables-wrap">
+      <div class="tables-title">${t("abcTitle")}</div>
+      <div class="abc-grid" id="abcGrid"></div>
+    </div>`;
+  const g=$("abcGrid");
+  abcData.forEach(item=>{
+    const card=document.createElement("div");
+    card.className="abc-card";
+    const word = appLang==="hi" ? item.hw : item.w;
+    card.innerHTML=`<span class="abc-emoji">${item.e}</span>
+      <div class="abc-letter">${item.h}</div>
+      <div class="abc-word">${word}</div>`;
+    card.onclick=()=>{
+      killAllAudio();
+      speak(`${item.h} ${appLang==="hi"?"से":"for"} ${word}`);
+      birdChu();
+      card.style.transform="scale(1.15) rotate(5deg)";
+      const r=card.getBoundingClientRect();
+      burst(r.left+r.width/2,r.top+r.height/2,30);
+      safeTimeout(()=>card.style.transform="",450);
+    };
+    g.appendChild(card);
+  });
+}
+
+/* Help */
+function renderHelp(){
+  $("question").textContent="—"; $("bar").style.width="0%";
+  const isHi = appLang==="hi";
+  const helpEN = `
+    <h2>❓ How to Play — Help & Tips</h2>
+    <h3>📖 Hindi Letters</h3>
+    <ul>
+      <li>Look at the Hindi letter on screen</li>
+      <li>Type its English form (like "a" for "अ", "ka" for "क")</li>
+      <li>Press <b>Enter</b> → it auto-advances to the next question</li>
+    </ul>
+    <h3>➕➖✖️➗ Math Practice</h3>
+    <ul>
+      <li>Type the answer, press <b>Enter</b> → next question opens automatically</li>
+      <li>Every correct answer = +10 score, +1 mark, +5 coins</li>
+    </ul>
+    <h3>📊 Tables</h3>
+    <ul>
+      <li>Pick a number 1-20 from the colored buttons</li>
+      <li>Click any cell to <b>hear</b> the line</li>
+      <li>Click <b>🗣️ Read in Human Voice</b> to hear the whole table</li>
+    </ul>
+    <h3>🧩 Table Practice</h3>
+    <ul>
+      <li>Fill the blanks and press <b>Enter</b> → cursor jumps to next blank</li>
+      <li>All done → auto checks and shows score</li>
+    </ul>
+    <h3>⌨️ 10 Typing Games</h3>
+    <ul>
+      <li><b>🐒 Monkey Stairs</b>, 🌠 <b>Falling Letters</b>, 🎈 <b>Balloon Pop</b></li>
+      <li><b>🏁 Word Race</b>, 🚂 <b>Cargo Train</b>, 🚀 <b>Rocket Launch</b></li>
+      <li><b>🥚 Egg Crack</b>, 💧 <b>Word Drop</b>, 🌈 <b>Color Typing</b>, 🃏 <b>Memory Match</b></li>
+    </ul>
+    <h3>🔔 Voice Not Working?</h3>
+    <ul>
+      <li>Click <b>🔔 Test Voice</b> in top toolbar</li>
+      <li>Status pill shows how many voices your device has</li>
+      <li>Voice needs one click first (browser rule)</li>
+    </ul>
+  `;
+  const helpHI = `
+    <h2>❓ कैसे खेलें — मदद और टिप्स</h2>
+    <h3>📖 हिंदी अक्षर</h3>
+    <ul>
+      <li>हिंदी अक्षर देखकर English रूप टाइप करो</li>
+      <li>Enter दबाओ → अगला सवाल खुद आ जाएगा</li>
+    </ul>
+    <h3>⌨️ 10 टाइपिंग गेम</h3>
+    <ul>
+      <li>🐒 बंदर सीढ़ियाँ, 🌠 गिरते अक्षर, 🎈 गुब्बारा, 🏁 शब्द दौड़, 🚂 रेलगाड़ी</li>
+      <li>🚀 रॉकेट लॉन्च, 🥚 अंडा फोड़ो, 💧 शब्द गिराव, 🌈 रंग टाइपिंग, 🃏 मेमरी मैच</li>
+    </ul>
+    <h3>🔔 आवाज़ नहीं आ रही?</h3>
+    <ul>
+      <li>ऊपर 🔔 Test Voice क्लिक करो</li>
+      <li>पेज पर एक बार क्लिक करना ज़रूरी है</li>
+    </ul>
+  `;
+  $("panel").innerHTML=`<div class="help-wrap">${isHi?helpHI:helpEN}</div>`;
+}
+
+/* Request */
+const OWNER_EMAIL = "your-email@example.com"; // 🔧 REPLACE
+function renderRequestForm(){
+  $("question").textContent="—"; $("bar").style.width="0%";
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="request-form">
+      <h2 style="color:#7c3aed;text-align:center;margin-bottom:6px">${t("requestTitle")}</h2>
+      <p class="request-note">${isHi?"बताओ तुम्हें कौन-सा नया फ़ीचर चाहिए!":"Tell us what new feature you want!"}</p>
+      <label>${isHi?"तुम्हारा नाम":"Kid's name"}</label>
+      <input id="rqName" placeholder="${isHi?"जैसे: Aarav":"e.g. Aarav"}">
+      <label>${isHi?"उम्र":"Age"}</label>
+      <select id="rqAge"><option>3-5</option><option>6-8</option><option>9-11</option><option>12+</option></select>
+      <label>${isHi?"कौन-सा फ़ीचर चाहिए?":"Which feature do you want?"}</label>
+      <select id="rqType">
+        <option>New Typing Game</option><option>New Math Topic</option>
+        <option>New Language</option><option>Story Mode</option>
+        <option>Song / Rhyme</option><option>Drawing / Tracing</option>
+        <option>Puzzle / Memory Game</option><option>Other</option>
+      </select>
+      <label>${isHi?"कुछ और बताओ (Optional)":"Tell us more (Optional)"}</label>
+      <textarea id="rqMsg" placeholder="${isHi?"यहाँ लिखो...":"Write here..."}"></textarea>
+      <button id="rqSend">${isHi?"📧 भेजो":"📧 Send"}</button>
+    </div>`;
+  $("rqSend").onclick=()=>{
+    killAllAudio();
+    const name=$("rqName").value.trim()||"A kid";
+    const age=$("rqAge").value, type=$("rqType").value;
+    const msg=$("rqMsg").value.trim()||"(no extra message)";
+    const subject = encodeURIComponent(`🎨 New Feature Request from ${name}`);
+    const body = encodeURIComponent(`Hi!\n\nName: ${name}\nAge: ${age}\nFeature: ${type}\nMessage: ${msg}\n\n— sent from Kids Learning Adventure`);
+    window.location.href = `mailto:${OWNER_EMAIL}?subject=${subject}&body=${body}`;
+    birdChu();
+    speak(isHi?"शुक्रिया! ईमेल खुल रहा है":"Thank you! Opening your email");
+  };
+}
+
+/* =========================================================
+   TYPING GAMES
+   ========================================================= */
+let typingTimer=null, typingRAF=null, typingState={};
+
+function stopAllTyping(){
+  clearInterval(typingTimer); cancelAnimationFrame(typingRAF);
+  typingTimer=null; typingRAF=null;
+  if(typingState.keyHandler){ document.removeEventListener("keydown", typingState.keyHandler); }
+  if(typingState.inputHandler){ document.removeEventListener("input", typingState.inputHandler); }
+  // Also clear any per-game timers registered by safeTimeout already handled by killAllAudio
+  typingState={};
+}
+
+const typingGames = [
+  {id:"monkey",  icon:"🐒", title:"Monkey Stairs",   titleHi:"बंदर सीढ़ियाँ",  desc:"Type letters — monkey jumps up!"},
+  {id:"falling", icon:"🌠", title:"Falling Letters", titleHi:"गिरते अक्षर",   desc:"Catch falling letters by typing them"},
+  {id:"balloon", icon:"🎈", title:"Balloon Pop",     titleHi:"गुब्बारा फोड़ो", desc:"Pop the balloon with the target number"},
+  {id:"race",    icon:"🏁", title:"Word Race",       titleHi:"शब्द दौड़",     desc:"Type to win the race!"},
+  {id:"cargo",   icon:"🚂", title:"Cargo Train",     titleHi:"रेलगाड़ी शब्द", desc:"Type words — train moves forward"},
+  {id:"rocket",  icon:"🚀", title:"Rocket Launch",   titleHi:"रॉकेट लॉन्च",   desc:"Type letters → rocket flies to moon!"},
+  {id:"egg",     icon:"🥚", title:"Egg Crack",       titleHi:"अंडा फोड़ो",     desc:"Type letters to crack eggs — surprise!"},
+  {id:"drop",    icon:"💧", title:"Word Drop",       titleHi:"शब्द गिराव",    desc:"Type falling words before they land"},
+  {id:"color",   icon:"🌈", title:"Color Typing",    titleHi:"रंग टाइपिंग",    desc:"Type the color name you see"},
+  {id:"memory",  icon:"🃏", title:"Memory Match",    titleHi:"मेमरी मैच",      desc:"Flip cards & match letter pairs"}
+];
+
+function renderTypingMenu(){
+  $("question").textContent="—"; $("bar").style.width="0%";
+  $("panel").innerHTML=`
+    <div class="tables-title">${t("typingTitle")}</div>
+    <div class="typing-menu" id="tmenu"></div>`;
+  const m=$("tmenu");
+  typingGames.forEach(g=>{
+    const card=document.createElement("div");
+    card.className="typing-card";
+    const title = appLang==="hi" ? g.titleHi : g.title;
+    card.innerHTML=`<span class="ic">${g.icon}</span><h3>${title}</h3><p>${g.desc}</p>`;
+    card.onclick=()=>{ killAllAudio(); birdChu(); startTypingGame(g.id); };
+    m.appendChild(card);
+  });
+  speak(appLang==="hi"?"टाइपिंग गेम चुनो":"Pick a typing game");
+}
+function startTypingGame(id){
+  killAllAudio();   // ⬅️ Stop everything before starting new game
+  stopAllTyping();
+  typingState.gameId = id;
+  if(id==="monkey") startMonkey();
+  else if(id==="falling") startFalling();
+  else if(id==="balloon") startBalloon();
+  else if(id==="race") startRace();
+  else if(id==="cargo") startCargo();
+  else if(id==="rocket") startRocket();
+  else if(id==="egg") startEgg();
+  else if(id==="drop") startDrop();
+  else if(id==="color") startColor();
+  else if(id==="memory") startMemory();
+}
+
+/* English helpers */
+const ENGLISH_WORDS = ["CAT","DOG","SUN","BIRD","FISH","MOON","STAR","TREE","BOOK","MILK","FROG","LION","BEAR","DUCK","FIRE","GOLD","HOME","KING","LOVE","RAIN"];
+const ENGLISH_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+function randomEnglishWord(len){
+  const w = ENGLISH_WORDS[Math.floor(Math.random()*ENGLISH_WORDS.length)];
+  return len ? w.slice(0,len) : w;
+}
+function randomEnglishLetters(n){
+  return Array.from({length:n},()=>ENGLISH_LETTERS[Math.floor(Math.random()*ENGLISH_LETTERS.length)]);
+}
+
+/* 1. Monkey Stairs */
+function startMonkey(){
+  const word = randomEnglishWord(5);
+  typingState.idx=0; typingState.word=word; typingState.correct=0; typingState.wrong=0;
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🐒 ${isHi?"बंदर की सीढ़ियाँ":"Monkey Stairs"}</div>
+      <div class="game-instructions">${isHi?"👇 अक्षर टाइप करो → बंदर ऊपर चढ़ेगा!":"👇 Type the letter → monkey jumps up a step!"}</div>
+      <div class="game-hud"><span>✅ <b id="mOK">0</b></span><span>❌ <b id="mBad">0</b></span><span>🎯 <b>${word}</b></span></div>
+      <div class="stairs" id="stairs"><div class="speech-bubble" id="bubble">${isHi?"चलो! 🐒":"Let's start! 🐒"}</div></div>
+      <div class="target-word" id="targetWord"></div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const stairs=$("stairs");
+  const stepW=90, stepH=46;
+  const gap = Math.max(4, (stairs.clientWidth - word.length*stepW - 40) / Math.max(1,word.length-1));
+  for(let i=0;i<word.length;i++){
+    const s=document.createElement("div");
+    s.className="stair";
+    s.style.cssText=`width:${stepW}px;height:${stepH}px;left:${15+i*(stepW+gap)}px;bottom:${i*stepH+10}px`;
+    s.dataset.i=i; s.textContent=`STEP ${i+1}`;
+    stairs.appendChild(s);
+  }
+  const monkey=document.createElement("div");
+  monkey.className="monkey"; monkey.textContent="🐒";
+  monkey.style.left="15px"; monkey.style.bottom="6px";
+  stairs.appendChild(monkey);
+  function renderTargetWord(){
+    const tw=$("targetWord"); tw.innerHTML="";
+    [...word].forEach((ch,i)=>{
+      const el=document.createElement("span");
+      el.className="target-letter"+(i<typingState.idx?" typed":"")+(i===typingState.idx?" active":"");
+      el.textContent=ch; tw.appendChild(el);
+    });
+  }
+  renderTargetWord();
+  function showBubble(txt){
+    const b=$("bubble"); b.textContent=txt; b.classList.remove("show");
+    void b.offsetWidth; b.classList.add("show");
+    clearTimeout(b._t); b._t=safeTimeout(()=>b.classList.remove("show"),1600);
+  }
+  typingState.keyHandler=(e)=>{
+    if(e.key==="Escape"||e.ctrlKey||e.altKey||e.metaKey) return;
+    if(e.key.length!==1) return;
+    const typed = e.key.toUpperCase();
+    if(typed===word[typingState.idx]){
+      typingState.idx++; typingState.correct++;
+      typeClick(); jumpSound();
+      $("mOK").textContent=typingState.correct;
+      speak(typed, "en-IN");
+      const s=stairs.querySelector(`[data-i="${typingState.idx-1}"]`);
+      if(s){
+        monkey.style.left=(parseFloat(s.style.left)+stepW/2-14)+"px";
+        monkey.style.bottom=(parseFloat(s.style.bottom)+stepH-6)+"px";
+        monkey.classList.remove("jump"); void monkey.offsetWidth; monkey.classList.add("jump");
+        s.classList.add("done");
+      }
+      showBubble(["Great! 🎉","Nice! 🌟","Super! ✅","Wow! 🐒"][Math.floor(Math.random()*4)]);
+      renderTargetWord();
+      if(typingState.idx>=word.length){
+        safeTimeout(()=>winTyping(isHi?"🐒 शाबाश! बंदर ऊपर!":"🐒 Awesome! Monkey reached the top!"),500);
+      }
+    }else{
+      typingState.wrong++; $("mBad").textContent=typingState.wrong;
+      gentleTry();
+      const act=document.querySelector(".target-letter.active");
+      if(act){act.classList.add("wrong"); safeTimeout(()=>act.classList.remove("wrong"),400);}
+      showBubble(isHi?"फिर कोशिश करो 🙈":"Try again 🙈");
+    }
+  };
+  document.addEventListener("keydown",typingState.keyHandler);
+}
+
+/* 2. Falling Letters */
+function startFalling(){
+  const word = randomEnglishWord(4);
+  typingState.idx=0; typingState.word=word; typingState.correct=0; typingState.wrong=0;
+  typingState.items=[]; typingState.last=0; typingState.spawnEvery=1500;
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🌠 ${isHi?"गिरते अक्षर":"Falling Letters"}</div>
+      <div class="game-instructions">${isHi?"👇 गिरते अक्षर टाइप करके पकड़ो!":"👇 Type the falling letters to catch them!"}<br><b>🎯 ${word}</b></div>
+      <div class="game-hud"><span>✅ <b id="fOK">0</b></span><span>❌ <b id="fBad">0</b></span></div>
+      <div class="fall-area" id="fArea"><div class="starfield"></div><div class="basket" id="basket"></div></div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const area=$("fArea");
+  const letters=[...new Set([...word, ...randomEnglishLetters(3)])];
+  function spawnLetter(){
+    const letter=letters[Math.floor(Math.random()*letters.length)];
+    const el=document.createElement("div");
+    el.className="fall-item"; el.textContent=letter;
+    const x=20+Math.random()*Math.max(40, area.clientWidth-70);
+    el.style.left=x+"px"; el.style.top="0px";
+    area.appendChild(el);
+    typingState.items.push({el,letter,x,y:0,vy:1.4+Math.random()*1.3,dead:false});
+  }
+  function loop(t){
+    if(!typingState.word) return;
+    if(t-typingState.last>typingState.spawnEvery){ typingState.last=t; spawnLetter(); }
+    typingState.items.forEach(it=>{
+      if(it.dead) return;
+      it.y+=it.vy; it.el.style.top=it.y+"px";
+      if(it.y>area.clientHeight-50){ it.dead=true; it.el.remove(); }
+    });
+    typingState.items=typingState.items.filter(i=>!i.dead);
+    typingRAF=requestAnimationFrame(loop);
+  }
+  typingRAF=requestAnimationFrame(loop);
+  typingState.keyHandler=(e)=>{
+    if(e.key==="Escape"||e.ctrlKey||e.altKey||e.metaKey) return;
+    if(e.key.length!==1) return;
+    const typed = e.key.toUpperCase();
+    const idx=typingState.items.findIndex(it=>it.letter===typed);
+    if(idx>=0){
+      const it=typingState.items[idx];
+      it.dead=true; it.el.remove();
+      typeClick(); sparkle(); popSound();
+      const b=$("basket");
+      b.style.left=Math.max(35, Math.min(area.clientWidth-35, it.x+20))+"px";
+      speak(typed, "en-IN");
+      if(typed===word[typingState.idx]){
+        typingState.idx++; typingState.correct++;
+        $("fOK").textContent=typingState.correct;
+        if(typingState.idx>=word.length){
+          safeTimeout(()=>winTyping(isHi?"🌟 सारे अक्षर पकड़े!":"🌟 You caught all letters!"),400);
+        }
+      }else{
+        typingState.wrong++; $("fBad").textContent=typingState.wrong;
+      }
+    }else{ gentleTry(); }
+  };
+  document.addEventListener("keydown",typingState.keyHandler);
+}
+
+/* 3. Balloon Pop */
+function startBalloon(){
+  const target = rnd(10);
+  typingState.target=target; typingState.score=0; typingState.bad=0;
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🎈 ${isHi?"गुब्बारा फोड़ो":"Balloon Pop"}</div>
+      <div class="game-instructions">${isHi?`👇 सही नंबर <b>${target}</b> वाला गुब्बारा क्लिक करो!`:`👇 Click balloons showing <b>${target}</b>! Get 5 to win!`}</div>
+      <div class="game-hud"><span>✅ <b id="bOK">0</b></span><span>❌ <b id="bBad">0</b></span><span>🎯 <b>${target}</b></span></div>
+      <div class="balloon-area" id="bArea"></div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const area=$("bArea");
+  function spawn(){
+    area.innerHTML="";
+    const nums = shuffle([...new Set([target, rnd(10), rnd(10), rnd(10), rnd(10), rnd(10)])]);
+    nums.forEach((n,i)=>{
+      const b=document.createElement("div");
+      b.className="balloon";
+      b.style.left=(6 + i*(88/nums.length))+"%";
+      b.style.bottom="20px";
+      b.style.animationDelay=(Math.random()*2)+"s";
+      b.innerHTML=`<span class="lbl">${n}</span>🎈`;
+      b.onclick=()=>{
+        if(b.classList.contains("pop")) return;
+        if(n===target){
+          b.classList.add("pop");
+          typeClick(); popSound(); sparkle();
+          typingState.score++; $("bOK").textContent=typingState.score;
+          const r=b.getBoundingClientRect();
+          burst(r.left+r.width/2, r.top+r.height/2, 25);
+          speak(String(n), "en-IN");
+          if(typingState.score>=5){
+            safeTimeout(()=>winTyping(isHi?"🎈 शाबाश!":"🎈 Well done!"),400);
+          }else{ safeTimeout(spawn, 600); }
+        }else{
+          typingState.bad++; $("bBad").textContent=typingState.bad;
+          gentleTry(); b.style.opacity=".35";
+        }
+      };
+      area.appendChild(b);
+    });
+  }
+  spawn();
+}
+
+/* 4. Word Race */
+function startRace(){
+  const letters="ABCDEFGHIJ".split("");
+  typingState.words=letters; typingState.idx=0; typingState.pos=0;
+  const isHi = appLang==="hi"; const GOAL=10;
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🏁 ${isHi?"शब्द दौड़":"Word Race"}</div>
+      <div class="game-instructions">${isHi?`👇 अक्षर टाइप करो → खरगोश दौड़ेगा! ${GOAL} अक्षर = जीत!`:`👇 Type the letter → your rabbit runs! ${GOAL} letters to win!`}</div>
+      <div class="game-hud"><span>🏃 <b id="rPos">0</b>/${GOAL}</span><span>🎯 <b id="rWord">${letters[0]}</b></span></div>
+      <div class="race-area" id="rArea"></div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  function draw(){
+    const area=$("rArea"); area.innerHTML="";
+    [{e:"🐇",mine:true},{e:"🐢",mine:false},{e:"🦊",mine:false}].forEach((r,i)=>{
+      const t=document.createElement("div"); t.className="race-track";
+      const run=document.createElement("div"); run.className="race-runner"; run.textContent=r.e;
+      const prog = r.mine ? typingState.pos : Math.min(GOAL, Math.floor(typingState.pos*(i===1?0.7:0.85)) + (Math.random()<0.3?1:0));
+      run.style.left = (prog*(100/GOAL)) + "%";
+      t.appendChild(run);
+      const f=document.createElement("div"); f.className="race-finish"; t.appendChild(f);
+      area.appendChild(t);
+    });
+  }
+  draw();
+  typingState.keyHandler=(e)=>{
+    if(e.key==="Escape"||e.ctrlKey||e.altKey||e.metaKey) return;
+    if(e.key.length!==1) return;
+    const cur=letters[typingState.idx % letters.length];
+    if(e.key.toUpperCase()===cur){
+      typingState.idx++; typingState.pos++;
+      typeClick(); sparkle(); jumpSound();
+      speak(e.key.toUpperCase(), "en-IN");
+      $("rPos").textContent=typingState.pos;
+      if(typingState.pos>=GOAL){
+        safeTimeout(()=>winTyping(isHi?"🏆 रेस जीत ली!":"🏆 You won the race!"),300); return;
+      }
+      $("rWord").textContent=letters[typingState.idx % letters.length];
+      draw();
+    }else{ gentleTry(); }
+  };
+  document.addEventListener("keydown",typingState.keyHandler);
+}
+
+/* 5. Cargo Train */
+function startCargo(){
+  const words=["CAT","DOG","SUN","BIRD","FISH","MOON","STAR","TREE"];
+  typingState.words=words; typingState.idx=0;
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🚂 ${isHi?"रेलगाड़ी शब्द":"Cargo Train"}</div>
+      <div class="game-instructions">${isHi?"👇 शब्द टाइप करो → गाड़ी चलेगी!":"👇 Type the word shown → train moves forward!"}</div>
+      <div class="game-hud"><span>🚂 <b id="cPos">0</b>/8</span></div>
+      <div class="cargo-track">
+        <div class="train-line"></div>
+        <div class="train" id="train" style="left:5%">🚂</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:6px">
+        <span class="practice-q" style="font-size:1.6rem;font-family:'Courier New',monospace" id="cWord">${words[0]}</span>
+        <input id="cInput" class="practice-blank" style="width:220px;font-size:1.1rem;font-family:'Courier New',monospace;text-transform:uppercase" placeholder="${isHi?'यहाँ टाइप करो...':'Type here...'}" autocomplete="off">
+      </div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const input=$("cInput"); input.focus();
+  typingState.inputHandler=()=>{
+    input.value = input.value.toUpperCase().replace(/[^A-Z]/g,"");
+    const target=typingState.words[typingState.idx];
+    if(input.value===target){
+      typeClick(); sparkle(); randomAnimalCheer();
+      typingState.idx++;
+      $("cPos").textContent=typingState.idx;
+      const tr=$("train"); tr.style.left=(5 + typingState.idx*11)+"%";
+      input.value="";
+      if(typingState.idx>=typingState.words.length){
+        safeTimeout(()=>winTyping(isHi?"🚂 सब शब्द टाइप हो गए!":"🚂 All words typed!"),300); return;
+      }
+      $("cWord").textContent = typingState.words[typingState.idx];
+    }
+  };
+  input.addEventListener("input", typingState.inputHandler);
+}
+
+/* 6. Rocket Launch */
+function startRocket(){
+  const word = randomEnglishWord(6);
+  typingState.idx=0; typingState.word=word; typingState.correct=0; typingState.wrong=0;
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🚀 ${isHi?"रॉकेट लॉन्च":"Rocket Launch"}</div>
+      <div class="game-instructions">${isHi?"👇 सही अक्षर टाइप करो → रॉकेट चाँद तक उड़ेगा!":"👇 Type correct letters → rocket flies to the moon! 🌙"}</div>
+      <div class="game-hud">
+        <span>✅ <b id="rOK">0</b></span>
+        <span>❌ <b id="rBad">0</b></span>
+        <span>🎯 <b id="rTarget" style="font-family:'Courier New',monospace">${word}</b></span>
+      </div>
+      <div class="rocket-area" id="rArea">
+        <div class="rocket-stars"></div>
+        <div class="rocket-track"></div>
+        <div class="rocket-goal">🌙</div>
+        <div class="rocket" id="rocket">🚀</div>
+      </div>
+      <div class="target-word" id="rocketTarget"></div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const rocket=$("rocket");
+  function renderTarget(){
+    const tw=$("rocketTarget"); tw.innerHTML="";
+    [...word].forEach((ch,i)=>{
+      const el=document.createElement("span");
+      el.className="target-letter"+(i<typingState.idx?" typed":"")+(i===typingState.idx?" active":"");
+      el.textContent=ch; tw.appendChild(el);
+    });
+  }
+  renderTarget();
+  typingState.keyHandler=(e)=>{
+    if(e.key==="Escape"||e.ctrlKey||e.altKey||e.metaKey) return;
+    if(e.key.length!==1) return;
+    const typed = e.key.toUpperCase();
+    if(typed===word[typingState.idx]){
+      typingState.idx++; typingState.correct++;
+      typeClick(); jumpSound();
+      $("rOK").textContent=typingState.correct;
+      speak(typed, "en-IN");
+      const progress = typingState.idx / word.length;
+      rocket.style.bottom = (20 + progress*260) + "px";
+      rocket.classList.add("flame");
+      safeTimeout(()=>rocket.classList.remove("flame"), 300);
+      renderTarget();
+      if(typingState.idx>=word.length){
+        safeTimeout(()=>winTyping(isHi?"🚀 शाबाश! रॉकेट चाँद पर पहुँचा!":"🚀 Awesome! Rocket reached the moon!"),500);
+      }
+    }else{
+      typingState.wrong++; $("rBad").textContent=typingState.wrong;
+      gentleTry();
+      const act=document.querySelector(".target-letter.active");
+      if(act){act.classList.add("wrong"); safeTimeout(()=>act.classList.remove("wrong"),400);}
+    }
+  };
+  document.addEventListener("keydown",typingState.keyHandler);
+}
+
+/* 7. Egg Crack */
+function startEgg(){
+  const word = randomEnglishWord(5);
+  typingState.idx=0; typingState.word=word; typingState.correct=0; typingState.wrong=0;
+  const isHi = appLang==="hi";
+  const surprises = ["🐣","🦄","🐢","🐬","🦋","🌟"];
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🥚 ${isHi?"अंडा फोड़ो":"Egg Crack"}</div>
+      <div class="game-instructions">${isHi?"👇 अक्षर टाइप करो → अंडा फूटेगा, अचरज निकलेगा!":"👇 Type the letter → egg cracks & surprise pops out! 🐣"}</div>
+      <div class="game-hud">
+        <span>✅ <b id="eOK">0</b></span>
+        <span>❌ <b id="eBad">0</b></span>
+        <span>🎯 <b id="eTarget" style="font-family:'Courier New',monospace">${word}</b></span>
+      </div>
+      <div class="egg-area">
+        <div class="egg-row" id="eggRow"></div>
+        <div class="target-word" id="eggTarget" style="margin-top:14px"></div>
+      </div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const row=$("eggRow");
+  [...word].forEach((ch,i)=>{
+    const egg=document.createElement("div");
+    egg.className="egg"; egg.id = "egg"+i;
+    egg.innerHTML = `🥚<span class="lbl">${ch}</span>`;
+    row.appendChild(egg);
+  });
+  function renderTarget(){
+    const tw=$("eggTarget"); tw.innerHTML="";
+    [...word].forEach((ch,i)=>{
+      const el=document.createElement("span");
+      el.className="target-letter"+(i<typingState.idx?" typed":"")+(i===typingState.idx?" active":"");
+      el.textContent=ch; tw.appendChild(el);
+    });
+  }
+  renderTarget();
+  typingState.keyHandler=(e)=>{
+    if(e.key==="Escape"||e.ctrlKey||e.altKey||e.metaKey) return;
+    if(e.key.length!==1) return;
+    const typed = e.key.toUpperCase();
+    if(typed===word[typingState.idx]){
+      typingState.idx++; typingState.correct++;
+      typeClick(); popSound(); sparkle();
+      $("eOK").textContent=typingState.correct;
+      speak(typed, "en-IN");
+      const egg = document.getElementById("egg"+(typingState.idx-1));
+      if(egg){
+        egg.classList.add("cracked");
+        const surprise = surprises[Math.floor(Math.random()*surprises.length)];
+        safeTimeout(()=>{
+          egg.innerHTML = surprise;
+          egg.style.fontSize = "3rem";
+          egg.classList.remove("cracked");
+          egg.style.transform = "scale(1.3)";
+          safeTimeout(()=>egg.style.transform = "scale(1)", 300);
+        }, 400);
+      }
+      renderTarget();
+      if(typingState.idx>=word.length){
+        safeTimeout(()=>winTyping(isHi?"🥚 सब अंडे फूट गए!":"🥚 All eggs cracked!"),700);
+      }
+    }else{
+      typingState.wrong++; $("eBad").textContent=typingState.wrong;
+      gentleTry();
+      const act=document.querySelector(".target-letter.active");
+      if(act){act.classList.add("wrong"); safeTimeout(()=>act.classList.remove("wrong"),400);}
+    }
+  };
+  document.addEventListener("keydown",typingState.keyHandler);
+}
+
+/* 8. Word Drop */
+function startDrop(){
+  const words = ["CAT","DOG","SUN","BOOK","FISH","MOON","STAR","FROG","BEAR","LION"];
+  typingState.queue = shuffle([...words]).slice(0,8);
+  typingState.idx = 0; typingState.correct=0; typingState.wrong=0;
+  typingState.items = [];
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">💧 ${isHi?"शब्द गिराव":"Word Drop"}</div>
+      <div class="game-instructions">${isHi?"👇 गिरते शब्दों को नीचे बॉक्स में टाइप करके पकड़ो!":"👇 Type the falling word into the box at the bottom before it lands!"}</div>
+      <div class="game-hud"><span>✅ <b id="dOK">0</b></span><span>❌ <b id="dBad">0</b></span><span>🎯 <b id="dTarget">${typingState.queue[0]}</b></span></div>
+      <div class="word-drop" id="dArea">
+        <input class="drop-input" id="dInput" placeholder="${isHi?'यहाँ टाइप करो...':'Type here...'}" autocomplete="off">
+      </div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const area = $("dArea");
+  const input = $("dInput"); input.focus();
+
+  function spawnWord(){
+    if(typingState.idx >= typingState.queue.length) return;
+    const word = typingState.queue[typingState.idx];
+    const el = document.createElement("div");
+    el.className = "drop-word"; el.textContent = word;
+    el.style.left = (10 + Math.random()*(area.clientWidth-140)) + "px";
+    el.style.top = "-40px";
+    area.appendChild(el);
+    const dur = 7000 + Math.random()*2000;
+    el.style.transition = `top ${dur}ms linear`;
+    requestAnimationFrame(()=>{ el.style.top = (area.clientHeight - 80) + "px"; });
+    typingState.items.push({el, word, done:false});
+    safeTimeout(()=>{
+      if(!el.parentNode) return;
+      if(!el.dataset.caught){
+        typingState.wrong++; $("dBad").textContent = typingState.wrong;
+        gentleTry();
+        el.remove();
+        typingState.idx++;
+        if(typingState.idx >= typingState.queue.length){ checkDropEnd(); }
+        else { $("dTarget").textContent = typingState.queue[typingState.idx]; spawnWord(); }
+      }
+    }, dur + 100);
+  }
+  spawnWord();
+  typingState.inputHandler = ()=>{
+    input.value = input.value.toUpperCase().replace(/[^A-Z]/g,"");
+    const target = typingState.queue[typingState.idx];
+    if(input.value === target){
+      const it = typingState.items.find(i=>!i.done && i.word === target);
+      if(it){
+        it.done = true; it.el.dataset.caught = "1";
+        const r = it.el.getBoundingClientRect();
+        burst(r.left+r.width/2, r.top, 25); sparkle();
+        it.el.remove();
+      }
+      typingState.correct++; typingState.idx++;
+      $("dOK").textContent = typingState.correct;
+      input.value = "";
+      if(typingState.idx >= typingState.queue.length){ checkDropEnd(); return; }
+      $("dTarget").textContent = typingState.queue[typingState.idx];
+      spawnWord();
+    }
+  };
+  input.addEventListener("input", typingState.inputHandler);
+
+  function checkDropEnd(){
+    safeTimeout(()=>winTyping(isHi?"💧 शाबाश! सब शब्द पकड़े!":"💧 Awesome! All words caught!"),400);
+  }
+}
+
+/* 9. Color Typing */
+function startColor(){
+  const colors = [
+    {name:"RED", hex:"#ef4444", emoji:"🔴"},
+    {name:"BLUE", hex:"#3b82f6", emoji:"🔵"},
+    {name:"GREEN", hex:"#10b981", emoji:"🟢"},
+    {name:"YELLOW", hex:"#fbbf24", emoji:"🟡"},
+    {name:"PURPLE", hex:"#a855f7", emoji:"🟣"},
+    {name:"ORANGE", hex:"#f97316", emoji:"🟠"},
+    {name:"PINK", hex:"#ec4899", emoji:"🩷"},
+    {name:"BLACK", hex:"#1e293b", emoji:"⚫"}
+  ];
+  typingState.queue = shuffle([...colors]).slice(0, 8);
+  typingState.idx = 0; typingState.correct = 0; typingState.wrong = 0;
+  const isHi = appLang==="hi";
+  function render(){
+    const cur = typingState.queue[typingState.idx];
+    if(!cur){ winTyping(isHi?"🌈 सब रंग टाइप हो गए!":"🌈 All colors typed!"); return; }
+    $("panel").innerHTML=`
+      <div class="typing-stage">
+        <div class="game-title">🌈 ${isHi?"रंग टाइपिंग":"Color Typing"}</div>
+        <div class="game-instructions">${isHi?"👇 नीचे दिखा रंग का नाम English में टाइप करो, Enter दबाओ":"👇 Type the name of the color shown below, then press Enter"}</div>
+        <div class="game-hud">
+          <span>✅ <b id="cOK">${typingState.correct}</b></span>
+          <span>❌ <b id="cBad">${typingState.wrong}</b></span>
+          <span>🎯 <b>${typingState.idx+1}/${typingState.queue.length}</b></span>
+        </div>
+        <div class="color-typing">
+          <div class="color-swatch" style="text-shadow:0 0 30px ${cur.hex}">${cur.emoji}</div>
+          <div class="color-name" style="color:${cur.hex};text-shadow:0 2px 0 #fff,0 0 18px ${cur.hex}55">${cur.name}</div>
+          <input id="cInput" autocomplete="off" placeholder="${isHi?'यहाँ लिखो...':'Type here...'}" style="text-transform:uppercase">
+        </div>
+        <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+      </div>`;
+    $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+    const input = $("cInput");
+    input.focus();
+    input.addEventListener("input", ()=>{ input.value = input.value.toUpperCase().replace(/[^A-Z]/g,""); typeClick(); });
+    input.addEventListener("keydown", (e)=>{
+      if(e.key !== "Enter") return;
+      const cur2 = typingState.queue[typingState.idx];
+      if(input.value === cur2.name){
+        typingState.correct++;
+        sparkle(); burst(innerWidth/2, innerHeight/2, 40); speak(cur2.name, "en-IN");
+        typingState.idx++;
+        render();
+      } else {
+        typingState.wrong++; gentleTry();
+        input.classList.add("bad");
+        safeTimeout(()=>input.classList.remove("bad"), 500);
+      }
+    });
+  }
+  render();
+}
+
+/* 10. Memory Match */
+function startMemory(){
+  const pairs = ["A","B","C","D","E","F","G","H"];
+  const cards = shuffle([...pairs, ...pairs]);
+  typingState.cards = cards;
+  typingState.flipped = [];
+  typingState.matched = 0;
+  typingState.tries = 0;
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="typing-stage">
+      <div class="game-title">🃏 ${isHi?"मेमरी मैच":"Memory Match"}</div>
+      <div class="game-instructions">${isHi?"👇 कार्ड क्लिक करो। दो एक जैसे अक्षर मिलाओ!":"👇 Click cards. Match pairs of the same letter!"}</div>
+      <div class="game-hud">
+        <span>✅ <b id="mMatched">0</b>/8</span>
+        <span>🔁 <b id="mTries">0</b></span>
+      </div>
+      <div class="memory-grid" id="memGrid"></div>
+      <button class="small-btn" id="back" style="align-self:flex-start">← ${isHi?"वापस":"Back"}</button>
+    </div>`;
+  $("back").onclick=()=>{ killAllAudio(); stopAllTyping(); renderTypingMenu(); };
+  const grid = $("memGrid");
+  cards.forEach((letter, i)=>{
+    const c = document.createElement("div");
+    c.className = "memory-card";
+    c.dataset.letter = letter; c.dataset.i = i;
+    c.textContent = "?";
+    c.onclick = ()=>{
+      if(c.classList.contains("flipped") || c.classList.contains("matched")) return;
+      if(typingState.flipped.length >= 2) return;
+      c.classList.add("flipped"); c.textContent = letter;
+      birdChu();
+      speak(letter, "en-IN");
+      typingState.flipped.push(c);
+      if(typingState.flipped.length === 2){
+        typingState.tries++;
+        $("mTries").textContent = typingState.tries;
+        const [a,b] = typingState.flipped;
+        if(a.dataset.letter === b.dataset.letter){
+          a.classList.add("matched"); b.classList.add("matched");
+          typingState.matched++;
+          $("mMatched").textContent = typingState.matched;
+          sparkle();
+          const r = a.getBoundingClientRect();
+          burst(r.left+r.width/2, r.top, 25);
+          safeTimeout(()=>{
+            a.classList.remove("flipped"); b.classList.remove("flipped");
+            typingState.flipped = [];
+          }, 300);
+          if(typingState.matched === 8){
+            safeTimeout(()=>winTyping(isHi?"🃏 सब जोड़े मिल गए!":"🃏 All pairs matched!"), 500);
+          }
+        } else {
+          gentleTry();
+          safeTimeout(()=>{
+            a.classList.remove("flipped"); b.classList.remove("flipped");
+            a.textContent = "?"; b.textContent = "?";
+            typingState.flipped = [];
+          }, 900);
+        }
+      }
+    };
+    grid.appendChild(c);
+  });
+}
+
+/* Win screen */
+function winTyping(msg){
+  killAllAudio();       // ⬅️ stop any running game audio
+  stopAllTyping();
+  burst(innerWidth/2, innerHeight/2, 100);
+  fanfare();
+  speak(appLang==="hi"?"शाबाश! तुम जीत गए!":"Wow! You won!");
+  const isHi = appLang==="hi";
+  $("panel").innerHTML=`
+    <div class="complete">
+      <div class="trophy">🏆</div>
+      <h2>${isHi?"शाबाश!":"Well done!"}</h2>
+      <p>${msg}</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+        <button class="small-btn" id="againGame">🔁 ${isHi?"फिर खेलो":"Play Again"}</button>
+        <button class="small-btn" id="backMenu">🏠 ${isHi?"गेम मेनू":"Game Menu"}</button>
+      </div>
+    </div>`;
+  $("againGame").onclick=()=>{ killAllAudio(); startTypingGame(typingState.gameId||"monkey"); };
+  $("backMenu").onclick=()=>{ killAllAudio(); renderTypingMenu(); };
+}
+
+/* =========================================================
+   EVENTS + BOOT
+   ========================================================= */
+/* 🛑 EVERY MENU BUTTON: kill audio first */
+document.querySelectorAll(".menu-btn").forEach(b=>{
+  b.onclick=()=>{
+    killAllAudio();          // ⬅️ THE FIX
+    unlockVoiceEngine();
+    startMode(b.dataset.tab);
+  };
+});
+$("restart").onclick=()=>{ killAllAudio(); startMode(mode); };
+$("soundToggle").onclick=()=>{
+  soundOn=!soundOn;
+  $("soundToggle").textContent = soundOn ? t("soundON") : t("soundOFF");
+  if(!soundOn) killAllAudio();  // mute everything immediately
+  else birdChu();
+};
+$("voiceToggle").onclick=()=>{
+  voiceOn=!voiceOn;
+  $("voiceToggle").textContent = voiceOn ? t("voiceON") : t("voiceOFF");
+  if(!voiceOn) killAllAudio();  // stop speech immediately
+  else speak(appLang==="hi"?"आवाज़ चालू":"Voice on");
+};
+$("natureToggle").onclick=()=>{
+  natureOn=!natureOn;
+  $("natureToggle").textContent = natureOn ? t("natureON") : t("natureOFF");
+  if(natureOn) birdChuLong();
+  else killAllAudio();
+};
+$("testVoice").onclick=()=>{ killAllAudio(); unlockVoiceEngine(); testVoice(); };
+
+document.querySelectorAll("[data-lang]").forEach(b=>{
+  b.onclick=()=>{
+    killAllAudio();    // ⬅️ stop current audio
+    appLang = b.dataset.lang;
+    document.querySelectorAll("[data-lang]").forEach(x=>x.classList.toggle("active",x===b));
+    applyI18n(); startMode(mode);
+    speak(appLang==="hi"?"नमस्ते! भाषा बदल गई":"Hello! Language changed");
+  };
+});
+document.querySelectorAll("[data-v]").forEach(b=>{
+  b.onclick=()=>{
+    killAllAudio();    // ⬅️ stop current audio
+    voiceStyle=b.dataset.v;
+    document.querySelectorAll("[data-v]").forEach(x=>x.classList.toggle("active",x===b));
+    birdChu();
+    speak(appLang==="hi"?"नमस्ते! यह मेरी आवाज़ है":"Hi! This is my voice");
+  };
+});
+
+document.addEventListener("keydown",e=>{
+  if(e.getModifierState) $("caps").textContent=e.getModifierState("CapsLock")?"ON":"OFF";
+  if(e.key==="Escape" && mode!=="typing"){
+    const a=$("answer"); if(a){a.value="";a.focus()}
+    killAllAudio();  // ⬅️ ESC also stops audio
+  }
+});
+document.addEventListener("keyup",e=>{
+  if(e.getModifierState) $("caps").textContent=e.getModifierState("CapsLock")?"ON":"OFF";
+});
+
+document.addEventListener("click", function onFirstClick(){
+  ac(); unlockVoiceEngine();
+  document.removeEventListener("click", onFirstClick);
+}, {once:true});
+
+/* Also kill audio when the page is hidden (tab switch on browser) */
+document.addEventListener("visibilitychange", ()=>{
+  if(document.hidden) killAllAudio();
+});
+
+applyI18n();
+loadVoicesAsync().then(()=>{
+  updateVoiceStatusFromAll();
+  if(allVoices.length === 0){
+    showVoiceBanner("❌ No voices found on your device. Please use Chrome or Edge with voices installed.");
+  }
+});
+startMode("hindi");
 </script>
 </body>
 </html>
