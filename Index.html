@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hindi Swar Vyanjan Barakhadi Adventure</title>
+<style>
+*{box-sizing:border-box} :root{--p:#6d28d9;--pink:#ec4899;--green:#059669;--red:#e11d48}
+html,body{width:100%;height:100%;margin:0;overflow:hidden}body{font-family:system-ui,"Segoe UI",sans-serif;background:linear-gradient(135deg,#dff5ff,#eee7ff 48%,#fff0bd);color:#334155;padding:8px}
+.app{width:min(1180px,100%);height:calc(100vh - 16px);margin:auto;display:grid;grid-template-rows:auto auto 9px minmax(0,1fr) auto;gap:7px}.header{text-align:center}.badge{display:inline-block;padding:4px 12px;border-radius:20px;background:#ffffffd9;color:var(--p);font-size:.75rem;font-weight:800}.header h1{margin:3px 0 1px;color:#4c1d95;font-size:clamp(1.45rem,3vh,2.2rem)}.header p{margin:0;font-size:.82rem;font-weight:700}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.stat{background:#ffffffd9;border-radius:12px;padding:5px;text-align:center;box-shadow:0 4px 12px #4c1d9514}.stat small{display:block;font-size:.61rem;font-weight:800;color:#64748b}.stat b{color:var(--p);font-size:1rem}.progress{height:9px;border-radius:10px;background:#ffffffa8;overflow:hidden}.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--p),#0ea5e9);transition:.35s}
+.card{min-height:0;overflow:hidden;background:#fffffff2;border:3px solid #fff;border-radius:22px;box-shadow:0 12px 35px #4c1d9528;padding:7px 20px;display:flex;align-items:center;justify-content:center;text-align:center}.play{width:100%;height:100%;display:grid;grid-template-rows:auto auto minmax(85px,1fr) auto auto auto;gap:2px;align-items:center}.stars{font-size:18px;color:#f59e0b;letter-spacing:4px}.instruction{margin:0;color:var(--pink);font-size:.7rem;font-weight:900;letter-spacing:1px}.letter{font-family:"Noto Sans Devanagari","Mangal",sans-serif;font-size:clamp(4.7rem,15vh,8.2rem);line-height:1;color:var(--p);font-weight:900;text-shadow:0 3px #ddd6fe;display:flex;justify-content:center;align-items:center}.controls{display:flex;justify-content:center;gap:8px}.small-btn{border:2px solid #bae6fd;background:#f0f9ff;color:#0369a1;border-radius:11px;padding:5px 12px;font-weight:800;cursor:pointer}.small-btn.hint{border-color:#fde68a;background:#fffbeb;color:#b45309}.hint-line{min-height:18px;margin:1px;font-size:.76rem;color:#b45309;font-weight:800}.answer-row{width:min(650px,100%);margin:auto;display:grid;grid-template-columns:1fr 175px;gap:8px}#answer{width:100%;border:3px solid #ddd6fe;border-radius:13px;padding:8px;text-align:center;font-size:1.35rem;font-weight:900;outline:none;color:#312e81;background:#fff}#answer:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px #ede9fe}#answer.ok{border-color:#34d399;background:#ecfdf5}#answer.bad{border-color:#fb7185;background:#fff1f2;animation:shake .25s 2}.check{border:0;border-radius:13px;color:#fff;font-weight:900;background:linear-gradient(90deg,var(--p),var(--pink));cursor:pointer}.message{height:24px;margin:0;font-weight:900;font-size:.9rem}.success{color:var(--green)}.error{color:var(--red)}
+.bottom{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;background:#ffffffb8;border-radius:13px;padding:5px}.bottom span,.bottom button{font-size:.7rem;font-weight:750}.bottom button{border:0;background:#fff;border-radius:8px;padding:5px 8px;cursor:pointer}kbd{background:#334155;color:#fff;border-radius:5px;padding:2px 5px}.complete h2{font-size:2rem;color:#4c1d95;margin:5px}.complete .trophy{font-size:55px}.hidden{display:none!important}@keyframes shake{25%{transform:translateX(-9px)}75%{transform:translateX(9px)}}
+@media(max-height:690px){.app{gap:4px}.badge{padding:2px 9px}.header h1{font-size:1.35rem}.stat{padding:3px}.letter{font-size:clamp(4rem,12vh,6.2rem)}.card{padding:4px 16px}}
+@media(max-width:760px){html,body{height:auto;min-height:100%;overflow:auto}.app{height:auto;display:flex;flex-direction:column}.stats{grid-template-columns:repeat(2,1fr)}.card{min-height:475px}.answer-row{grid-template-columns:1fr}.check{padding:11px}.bottom{margin-bottom:10px}}
+</style>
+</head>
+<body>
+<main class="app">
+<header class="header"><div class="badge">✨ कक्षा 3 हिंदी अभ्यास</div><h1>अक्षर टाइपिंग एडवेंचर</h1><p>हिंदी अक्षर देखकर उसका English रूप टाइप करो</p></header>
+<section class="stats">
+ <div class="stat"><small>⭐ SCORE</small><b id="score">0</b></div><div class="stat"><small>✅ MARKS</small><b id="marks">0</b></div><div class="stat"><small>🔥 STREAK</small><b id="streak">0</b></div><div class="stat"><small>🎯 QUESTION</small><b id="question">1/1</b></div><div class="stat"><small>📝 ATTEMPTS</small><b id="attempts">0</b></div>
+</section>
+<div class="progress"><div id="bar"></div></div>
+<section class="card">
+ <div id="play" class="play">
+  <div id="stars" class="stars">☆ ☆ ☆ ☆ ☆</div><p class="instruction">इस अक्षर का ENGLISH रूप टाइप करो</p><div id="letter" class="letter">अ</div>
+  <div><div class="controls"><button id="speak" class="small-btn" type="button">🔊 सुनें</button><button id="hintBtn" class="small-btn hint" type="button">💡 Hint</button></div><p id="hint" class="hint-line"></p></div>
+  <form id="form" class="answer-row"><input id="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type here..." autofocus enabled><button class="check" type="submit">Check Answer</button></form>
+  <p id="message" class="message" aria-live="polite"></p>
+ </div>
+ <div id="complete" class="complete hidden"><div class="trophy">🏆</div><h2>बहुत बढ़िया!</h2><p>सभी अभ्यास पूरे हुए।</p><h3 id="final"></h3><button id="again" class="small-btn">फिर से खेलें</button></div>
+</section>
+<footer class="bottom"><button id="restart">↻ Restart</button><button id="reshuffle">🔀 Reshuffle</button><span><kbd>Enter</kbd> Check</span><span><kbd>Esc</kbd> Clear</span><span><kbd>Backspace</kbd> Delete</span><span><kbd>Caps Lock</kbd> <b id="caps">OFF</b></span></footer>
+</main>
+<script>
+const swar=[["अ","a"],["आ","aa"],["इ","i"],["ई","ee"],["उ","u"],["ऊ","oo"],["ऋ","ri"],["ए","e"],["ऐ","ai"],["ओ","o"],["औ","au"],["अं","am"],["अः","ah"]];
+const consonants=[["क","ka"],["ख","kha"],["ग","ga"],["घ","gha"],["च","cha"],["छ","chha"],["ज","ja"],["झ","jha"],["ट","ta"],["ठ","tha"],["ड","da"],["ढ","dha"],["ण","na"],["त","ta"],["थ","tha"],["द","da"],["ध","dha"],["न","na"],["प","pa"],["फ","pha"],["ब","ba"],["भ","bha"],["म","ma"],["य","ya"],["र","ra"],["ल","la"],["ळ","la"],["व","va"],["श","sha"],["ष","sha"],["स","sa"],["ह","ha"],["क्ष","ksha"],["त्र","tra"],["ज्ञ","dnya"],["श्र","shra"]];
+const forms=[["",""] ,["ा","a"],["ि","i"],["ी","ee"],["ु","u"],["ू","oo"],["े","e"],["ै","ai"],["ो","o"],["ौ","au"],["ं","am"],["ः","ah"]];
+function makeBarakhadi(){return consonants.flatMap(([h,base])=>forms.map(([m,s],i)=>({hindi:h+m,answer:i===0?base:base.slice(0,-1)+s,type:"Barakhadi"})))}
+const lessons=[...swar.map(([h,a])=>({hindi:h,answer:a,type:"Swar"})),...consonants.map(([h,a])=>({hindi:h,answer:a,type:"Vyanjan"})),...makeBarakhadi()];
+const $=id=>document.getElementById(id);let order=[],pos=0,score=0,marks=0,streak=0,attempts=0,locked=false;
+function shuffle(){order=lessons.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}}
+function current(){return lessons[order[pos]]}function say(text,lang="hi-IN",done){if(!("speechSynthesis" in window)){done&&done();return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.78;if(done)u.onend=done;speechSynthesis.speak(u)}
+function render(){if(pos>=order.length){$("play").classList.add("hidden");$("complete").classList.remove("hidden");$("final").textContent=`Marks: ${marks} | Score: ${score}`;return}const q=current();$("letter").textContent=q.hindi;$("question").textContent=`${pos+1}/${order.length}`;$("score").textContent=score;$("marks").textContent=marks;$("streak").textContent=streak;$("attempts").textContent=attempts;$("bar").style.width=`${pos/order.length*100}%`;const n=Math.min(5,Math.floor(streak/3));$("stars").textContent="★ ".repeat(n)+"☆ ".repeat(5-n);$("answer").value="";$("answer").className="";$("answer").disabled=false;$("hint").textContent="";$("message").textContent="";$("message").className="message";$("answer").focus();setTimeout(()=>say(q.hindi),200)}
+function check(e){e.preventDefault();if(locked||!$("answer").value.trim())return;attempts++;$("attempts").textContent=attempts;if($("answer").value.trim().toLowerCase()===current().answer.toLowerCase()){locked=true;score+=10;marks++;streak++;$("answer").classList.add("ok");$("message").textContent="✓ सही जवाब! +1 Mark";$("message").className="message success";const praise=["Nice! Correct answer!","बहुत बढ़िया! सही जवाब!","शाबाश! सही जवाब!"][marks%3];say(praise,praise.includes("answer")?"en-IN":"hi-IN",()=>setTimeout(()=>{pos++;locked=false;render()},150))}else{streak=0;$("streak").textContent=0;$("answer").classList.add("bad");$("answer").value="";$("message").textContent="Oops! Try again";$("message").className="message error";say("Oops! Try again","en-IN",()=>{$("answer").classList.remove("bad");$("answer").focus()})}}
+function reset(){speechSynthesis?.cancel?.();shuffle();pos=score=marks=streak=attempts=0;locked=false;$("play").classList.remove("hidden");$("complete").classList.add("hidden");render()}
+$("form").addEventListener("submit",check);$("answer").addEventListener("input",e=>e.target.value=e.target.value.replace(/[^a-zA-Z]/g,""));$("speak").onclick=()=>say(current().hindi);$("hintBtn").onclick=()=>$("hint").textContent=`Hint: ${current().answer[0]} • ${current().answer.length} letters • ${current().type}`;$("restart").onclick=reset;$("reshuffle").onclick=reset;$("again").onclick=reset;
+document.addEventListener("keydown",e=>{const on=e.getModifierState&&e.getModifierState("CapsLock");$("caps").textContent=on?"ON":"OFF";if(e.key==="Escape"){$("answer").value="";$("message").textContent="Input cleared";$("answer").focus()}});document.addEventListener("keyup",e=>{if(e.getModifierState)$("caps").textContent=e.getModifierState("CapsLock")?"ON":"OFF"});
+reset();
+</script>
+</body>
+</html>
